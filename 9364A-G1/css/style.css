@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* HEADER */
+header{
+  background:rgba(39, 34, 62, 1);
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#e8491d 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+header #branding{
+  float:left;
+}
+header #branding h1{
+  margin:0;
+}
+header nav{
+  float:right;
+  margin-top:10px;
+}
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+
+/* Global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+
+
+/* Boxes */
+#boxes{
+  margin-top:40px;
+}
+
+#boxes p{
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 17px;
+}
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+}
+
+#boxes .box img{
+  width:90px;
+}
+
+#boxes1 {
+  width: 40%;
+  margin: 0 auto;
+  background:#BFBFBF;
+  padding: 35px;
+  border: 2px solid #130362;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+#boxes1 a{
+	color: black;
+	height: 20px;
+	  font-family: Arial, sans-serif;
+	font-size: 20px;
+	
+}
+
+
+/* POPUP */
+.button {
+  font-size: 1em;
+  padding: 15px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+/* Footer */
+footer{
+	padding: 20px;
+	margin-top: 20px;
+ 	background:rgba(39, 34, 62, 1);
+  	color:#ffffff;
+	text-align: center;
+}
