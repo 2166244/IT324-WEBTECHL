@@ -1,0 +1,87 @@
+html{
+	margin: 0px;
+	padding: 0;
+}
+body{
+	margin: 0px;
+	padding:0;
+	background: url("../images/slu logo.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
+
+div.welcome {
+    background: url("../images/background.jpg");
+	background-repeat: no-repeat;
+	padding: 180px;
+	opacity: 0.7;
+	background-size; cover;
+	background-attachment: fixed;
+	padding: 100px;	
+}
+
+H1{
+	color: white;
+	letter-spacing: 1px;
+	font-family: Tahoma;
+	Font-size: 60px;
+	text-align: center;
+}
+
+nav {
+	word-spacing: normal;
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 20px;
+	overflow: hidden;
+	border: 1px solid #e7e7e7;
+	background-color: #44434D;
+	text-align: justify;
+	opacity: 0.7;
+	font-family: Tahoma;
+	word-spacing: 500px;
+}
+
+li {
+    float: left;
+	color: antiquewhite;
+	text-align: center;
+}
+
+.nav{
+	z-index: 100;
+	float: inherit;
+	
+}
+
+li a {
+    font-size: 20px;
+    font-size: calc(12px + 0.7vw);
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+div.about{
+	float: right;
+	
+}
+
+div.About1{
+	float: right;
+}
+
+
+	
+
