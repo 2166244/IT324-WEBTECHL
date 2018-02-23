@@ -1,14 +1,35 @@
 @charset "utf-8";
 /* CSS Document */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* WELCOME */
+.welcome {
+	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/../images/background.jpg);
+	height: 50vh;
+	padding: 90px;
+	background-position: center;
+	background-size: cover;
+	border-bottom:#000000 7px solid;
+	margin-bottom: 0px;
+	
+}
+
 
 
 /* HEADER */
 header{
   background:rgba(39, 34, 62, 1);
   color:#ffffff;
-  padding-top:30px;
-  min-height:70px;
+  padding-top:17px;
+  min-height:55px;
   border-bottom:#e8491d 3px solid;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    transition: background 0.5s ease-out;
+	
 }
 
 header a{
@@ -53,8 +74,11 @@ ul{
 
 
 /* Boxes */
+#boxes2 h1{
+	text-align: center;
+}
 #boxes{
-  margin-top:40px;
+  margin-top:400px;
 }
 
 #boxes p{
@@ -158,6 +182,76 @@ ul{
   max-height: 30%;
   overflow: auto;
 }
+
+/* SECTION IMAGE*/
+
+#boxes2{
+		float: left;
+		padding-top: 50px;
+		padding-bottom: 100px;
+		width: 100%;
+		padding-left:0;
+		padding-right:0;
+}
+
+#icon-wrapper{
+	width:100%;
+	float:left;
+	height:300px;
+}
+
+.icons {
+	width:25%;
+	float:left;
+	position:relative;
+}
+.icons2 {
+	width:25%;
+	float:left;
+	position:relative;
+	margin-left:25%;
+}
+.icons3 {
+	width:25%;
+	float:left;
+	position:relative;
+	margin-left:50%;
+}
+.icons4 {
+	width:25%;
+	float:left;
+	position:relative;
+	margin-left:75%;
+}
+
+.icon-slide-container{
+	height:300px;
+	overflow:hidden;
+	text-align: left;
+	position: absolute;
+	float: left;
+	width: 300px;
+	left: 50%;
+	margin-left: -150px;
+}
+
+.slide-icon{
+  width:300px;
+  height:auto;
+  position:absolute;
+  margin-top:-300px;
+  -webkit-transition:.4s ease;
+  -moz-transition:.4s ease;
+  -ms-transition:.4s ease;
+  -o-transition:.4s ease;
+  transition:.4 ease;
+}
+	
+.slide-icon:hover{
+  position:absolute;
+  margin-top:0;
+}
+
 
 /* Footer */
 footer{
