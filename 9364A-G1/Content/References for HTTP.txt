@@ -1,0 +1,7 @@
+HTTP
+Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing. (n.d.). Retrieved February 23, 2018, from https://tools.ietf.org/html/rfc7230
+
+Hypertext Transfer Protocol Version 2 (HTTP/2). (n.d.). Retrieved February 23, 2018, from https://tools.ietf.org/html/rfc7540
+
+Hypertext Transfer Protocol -- HTTP/1.0. (n.d.). Retrieved February 23, 2018, from https://tools.ietf.org/html/rfc1945
+
