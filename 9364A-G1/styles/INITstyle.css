@@ -74,13 +74,24 @@ ul{
 
 
 /* Boxes */
+#boxes2{
+	background-color: antiquewhite;
+}
 #boxes2 h1{
 	text-align: center;
 }
 #boxes{
-  margin-top:400px;
+	background-color:cornsilk;
+	line-height: 30px;
+	padding-top: 500px;
+	padding-bottom: 100px;
+	background: url(../images/img4.jpg);
+	
 }
-
+#boxes h3{
+	    font: italic normal bold 23px/1.4em 'times new roman',times,serif;
+    color: #27223E;
+}
 #boxes p{
   margin-top: 0;
   color: #333;
@@ -96,6 +107,7 @@ ul{
 
 #boxes .box img{
   width:90px;
+opacity: 0.6;
 }
 
 #boxes1 {
@@ -250,6 +262,79 @@ ul{
 .slide-icon:hover{
   position:absolute;
   margin-top:0;
+}
+
+
+/* DROPDOWN */
+#wrapper {
+  margin: 64px auto;
+  padding: 32px;
+  width: 800px;
+  background: #21292D;
+  box-shadow: 0 2px 0 rgba(255, 255, 255, 0.1) inset;
+}
+
+/* Typography */
+#wrapper h1 {
+  font-family: 'Open Sans', sans-serif;
+  display: inline-block;
+  margin-bottom: 8px;
+  font-size: 2em;
+  letter-spacing: 2px;
+  font-weight: 300;
+  color: #FFF;
+}
+
+.content p {
+  font-family: 'Droid Serif', serif;
+  display: block;
+  font-size: .9em;
+  font-style: italic;
+  text-align: justify;
+  color: #748792;
+  /* :In this Demonstration, the Paragraph is the Hidden Content */
+  height: 0;
+  opacity: 0;
+  transition: .4s ease-in-out;
+}
+
+/* Content */
+.content {
+  overflow: hidden;
+}
+
+/* Arrow Indicator */
+input[type=checkbox] {
+  position: relative;
+  top: -12px;
+  visibility: hidden;
+}
+
+/* :Arrow Symbol */
+input[type=checkbox]::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  visibility: visible;
+  width: 0;
+  height: 0;
+  transition: .4s ease-in-out;
+  /* Arrow is Pure CSS meaning it is sizable and you can change its colour! */
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid white;
+}
+
+/* :Rotate Arrow */
+input[type=checkbox]:checked::after {
+  transform: rotate(90deg);
+}
+
+/* :Show the Hidden Content */
+input[type=checkbox]:checked + p {
+  opacity: 1;
+  height: 100px;
 }
 
 
