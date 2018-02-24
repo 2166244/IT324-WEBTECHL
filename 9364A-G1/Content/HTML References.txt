@@ -1,0 +1,9 @@
+(n.d.). Retrieved February 23, 2018, from https://www.w3.org/MarkUp/html-spec/
+
+(n.d.). Retrieved February 23, 2018, from https://www.w3.org/TR/REC-html32
+
+(n.d.). Retrieved February 23, 2018, from https://www.w3.org/TR/WD-html40/
+
+Public Text of the HTML 2.0 Specification. (n.d.). Retrieved February 23, 2018, from https://www.w3.org/MarkUp/html-spec/html-pubtext.html
+
+The 'text/html' Media Type. (n.d.). Retrieved February 23, 2018, from https://tools.ietf.org/html/rfc1866
