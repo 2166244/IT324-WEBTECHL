@@ -1,0 +1,59 @@
+html,
+body {
+ background-color: #000;
+}
+
+.container {
+  max-width: 100em; // 1600px
+  padding: 0;
+  background-color: #1c1c1c;
+}
+
+main {
+  max-width: 60em; // 960px
+  margin: -6.8em auto 0;
+  background-color: #000;
+  border-right: 12px solid #fff;
+  overflow: auto;
+}
+
+.content,
+.sidebar {
+  padding-top: 6em;
+}
+
+.content {
+  max-width: 45em;
+  border: none;
+  float: left;
+  width: 70%;
+  background-color: #fff;
+}
+
+.sidebar {
+  float: right;
+  width: 30%;
+  background-color: #000;
+  color: #fff;
+
+  @media (min-width:1600px) {
+    background-image: url("data:image/svg+xml;charset='utf8',%3Csvg xmlns='http://www.w3.org/2000/svg' width='324' height='76' viewBox='0 0 324 76'%3E%3Cpolygon fill='rgb(255,255,255)' points='324,25.5 111,76 0,52 0,0 324,0'/%3E%3Cpolygon fill='rgb(216,0,50)' points='314,18 111,66 10,44 10,36 111,58 314,10'/%3E%3C/svg%3E");
+    background-position: -1.7em 3.25em;
+    background-repeat: no-repeat;
+    padding-top: 6em;
+  }
+
+}
+
+.sidebar ul {
+  padding: 2em;
+  margin-top: 2em;
+}
+
+.sidebar ul li {
+  font-size: 1em;
+}
+
+.content p {
+  font-size: 1.125em;
+} 

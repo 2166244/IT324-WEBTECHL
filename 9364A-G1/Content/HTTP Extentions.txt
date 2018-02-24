@@ -1,0 +1,119 @@
+HTTP EXTENSIONS
+
+Introduction
+
+This proposal is designed to address the tension between private
+agreement and public specification; and to accommodate dynamic
+extension of HTTP clients and servers by software components. The kind
+of extensions capable of being introduced range from:
+
+   o extending a single HTTP message;
+
+   o introducing new encodings;
+
+   o initiating HTTP-derived protocols for new applications; to...
+
+   o switching to protocols which, once initiated, run independent of
+     the original protocol stack.
+
+The proposal is intended to be used as follows:
+
+   o Some party designs and specifies an extension; the party assigns
+     the extension a globally unique URI, and makes one or more
+     representations of the extension available at that address (see
+     section 8).
+	 
+   o An HTTP client or server that implements this extension mechanism
+     (hereafter called an agent) declares the use of the extension by
+     referencing its URI in an extension declaration in an HTTP
+     message (see section 3).
+
+   o The HTTP application which the extension declaration is intended
+     for (hereafter called the ultimate recipient) can deduce how to
+     properly interpret the extended message based on the extension
+     declaration.
+
+2. Notational Conventions
+
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+"SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this
+document are to be interpreted as described in RFC 2119 [6].
+
+3. Extension Declarations
+
+An extension declaration can be used to indicate that an extension has
+been applied to a message and possibly to reserve a part of the header
+namespace identified by a header field prefix.
+
+3.1 Header Field Prefixes
+The header-prefix is a dynamically generated string. All header fields
+in the message that match this string, using string prefix-matching,
+belong to that extension declaration.
+
+4. Extension Header Fields
+
+This proposal introduces two types of extension declaration strength:
+mandatory and optional, and two types of extension declaration scope:
+hop-by-hop and end-to-end 
+
+A mandatory extension declaration indicates that the ultimate
+recipient MUST consult and adhere to the rules given by the extension
+when processing the message or reporting an error 
+
+An optional extension declaration indicates that the ultimate
+recipient of the extension MAY consult and adhere to the rules given
+by the extension when processing the message, or ignore the extension
+declaration completely.
+
+4.1 End-to-End Extensions
+End-to-end declarations MUST be transmitted to the ultimate recipient
+of the declaration.
+
+4.2 Hop-by-Hop Extensions
+Hop-by-hop extension declarations are meaningful only for a single
+HTTP connection. 
+
+4.3 Extension Response Header Fields
+The extension response header fields are exclusively intended to serve as extension
+acknowledgements, and can not carry any other information.
+
+5. Mandatory HTTP Requests
+An HTTP request is called a mandatory request if it includes at least
+one mandatory extension declaration (using the Man or the C-Man header
+fields). 
+
+5.1 Fulfilling a Mandatory Request
+A server MUST NOT claim to have fulfilled any mandatory request unless
+it understood and obeyed all the mandatory extension declarations in
+the request.
+
+6. Mandatory HTTP Responses
+A server MUST NOT include mandatory extension declarations in an HTTP
+response unless it is responding to a mandatory HTTP request whose
+definition allowed for the mandatory response or the server has some a
+priori knowledge that the recipient can handle the extended response.
+
+7. 510 Not Extended
+The policy for accessing the resource has not been met in the request.
+The server should send back all the information necessary for the
+client to issue an extended request.
+
+8. Publishing an Extension
+The only absolute requirement is that extension
+identifiers MUST be globally unique identifiers, and that distinct
+names be used for distinct semantics.
+
+9. Caching Considerations
+The originator of an extended message should be able to determine from
+the semantics of the extension whether or not the extension's presence
+impacts the caching constraints of the response message. 
+
+10. Security Considerations
+Dynamic installation of extension facilities as described in the
+introduction involves software written by one party (the provider of
+the implementation) to be executed under the authority of another (the
+party operating the host software).
+
+REFERENCE:
+HTTP Extentions. (n.d.). Retrieved February 24, 2018, from 
+	https://www.w3.org/Protocols/HTTP/ietf-http-ext/draft-frystyk-http-extensions-03
