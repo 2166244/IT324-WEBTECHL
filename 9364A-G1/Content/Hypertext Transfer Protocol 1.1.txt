@@ -1,0 +1,67 @@
+Hypertext Transfer Protocol 1.1
+
+Meaning: 
+	The Hypertext Transfer Protocol (HTTP) is an application-level
+   protocol for distributed, collaborative, hypermedia information
+   systems. It is a generic, stateless, protocol which can be used for
+   many tasks beyond its use for hypertext, such as name servers and
+   distributed object management systems, through extension of its
+   request methods, error codes and headers
+
+INTRODUCTION
+   The Hypertext Transfer Protocol (HTTP) is a stateless application-
+   level request/response protocol that uses extensible semantics and
+   self-descriptive message payloads for flexible interaction with
+   network-based hypertext information systems.  This document is the
+   first in a series of documents that collectively form the HTTP/1.1
+   specification:
+   
+Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing
+   HTTP is a generic interface protocol for information systems.  It is
+   designed to hide the details of how a service is implemented by
+   presenting a uniform interface to clients that is independent of the
+   types of resources provided.  Likewise, servers do not need to be
+   aware of each client's purpose: an HTTP request can be considered in
+   isolation rather than being associated with a specific type of client
+   or a predetermined sequence of application steps.  The result is a
+   protocol that can be used effectively in many different contexts and
+   for which implementations can evolve independently over time.
+
+Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content
+   Each Hypertext Transfer Protocol (HTTP) message is either a request
+   or a response.  A server listens on a connection for a request,
+   parses each message received, interprets the message semantics in
+   relation to the identified request target, and responds to that
+   request with one or more response messages.  A client constructs
+   request messages to communicate specific intentions, examines
+   received responses to see if the intentions were carried out, and
+   determines how to interpret the results.
+
+Hypertext Transfer Protocol (HTTP/1.1): Conditional Requests
+   Conditional requests are HTTP requests [RFC7231] that include one or
+   more header fields indicating a precondition to be tested before
+   applying the method semantics to the target resource. 
+   Conditional GET requests are the most efficient mechanism for HTTP
+   cache updates. Conditionals can also be applied to
+   state-changing methods, such as PUT and DELETE, to prevent the "lost
+   update" problem: one client accidentally overwriting the work of
+   another client that has been acting in parallel.Conditional request preconditions are based on the state of the
+   target resource as a whole (its current value set) or the state as
+   observed in a previously obtained representation (one value in that
+   set).
+ 
+ Hypertext Transfer Protocol (HTTP/1.1): Caching
+   HTTP is typically used for distributed information systems, where
+   performance can be improved by the use of response caches.
+   An HTTP cache is a local store of response messages and the subsystem
+   that controls storage, retrieval, and deletion of messages in it.  A
+   cache stores cacheable responses in order to reduce the response time
+   and network bandwidth consumption on future, equivalent requests.
+   Any client or server MAY employ a cache, though a cache cannot be
+   used by a server that is acting as a tunnel.
+   
+ Hypertext Transfer Protocol (HTTP/1.1): Authentication
+   HTTP provides a general framework for access control and
+   authentication, via an extensible set of challenge-response
+   authentication schemes, which can be used by a server to challenge a
+   client request and by a client to provide authentication information.

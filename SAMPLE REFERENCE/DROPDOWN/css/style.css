@@ -21,7 +21,7 @@ body {
 }
 
 /* Typography */
-h1 {
+#wrapper h1 {
   font-family: 'Open Sans', sans-serif;
   display: inline-block;
   margin-bottom: 8px;
@@ -31,7 +31,7 @@ h1 {
   color: #FFF;
 }
 
-p {
+#content p {
   font-family: 'Droid Serif', serif;
   display: block;
   font-size: .9em;

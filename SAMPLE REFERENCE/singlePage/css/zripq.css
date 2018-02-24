@@ -1,0 +1,608 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+::before,
+::after {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+* {
+  font-family: inherit;
+  line-height: inherit;
+  color: inherit;
+  // outline: 1px dotted salmon;
+} 
+
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+}
+
+body {
+  margin: 0;
+  font: 100%/1.5 AvenirNext-Regular, -apple-system, BlinkMacSystemFont, "Segoe UI", Corbel, "Lucida Grande", "Trebuchet Ms", sans-serif;
+  color: #111;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+h2, h3, h4, h5, h6, p, blockquote, pre, dl, ol, form, table, figure, nav, hr  {
+  margin-top: 3rem;
+}
+
+audio, canvas, progress, video, label {
+  display: inline-block;
+}
+
+label {
+  margin-top: 1rem;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden], template {
+  display: none;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+a {
+  background: transparent;
+  color: #4183c4;
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img, svg {
+  border: 0;
+  max-width: 100%;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin-left: 1em;
+}
+
+hr {
+  height: 0;
+  padding: 1px;
+  border: 1px solid #ccc;
+  margin-bottom: 3rem;
+  box-sizing: content-box;
+  background-color: #eee;
+}
+
+article,
+.container {
+  max-width: 60em;
+  margin: 0 auto 2em;
+  padding: 2.5em 5% 3em;
+  overflow: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #222;
+  margin-bottom: 0;
+  padding: .25rem 0 0;
+}
+
+h1 {
+  font-family: AvenirNextCondensed-Medium, -apple-system, BlinkMacSystemFont, "Segoe Ui", Corbel, "Lucida Grande","Trebuchet Ms", sans-serif;
+  padding-top: 0;
+  margin: 0;
+}
+
+h2, h3, h4, h5, dt {
+  font-family: AvenirNextCondensed-DemiBold, -apple-system, BlinkMacSystemFont, "Segoe Ui", Corbel, "Lucida Grande","Trebuchet Ms", sans-serif;
+}
+
+h6, b, strong, thead th, button {
+  font-family: AvenirNext-DemiBold, -apple-system, BlinkMacSystemFont, "Segoe Ui", Corbel, "Lucida Grande","Trebuchet Ms", sans-serif;
+}
+
+em {
+  font-family: AvenirNext-DemiBoldItalic, -apple-system, BlinkMacSystemFont, "Segoe Ui", Corbel, "Lucida Grande","Trebuchet Ms", sans-serif;
+}
+
+i {
+  font-family: AvenirNext-Italic, Avenir-Oblique, -apple-system, BlinkMacSystemFont, "Segoe UI", TrebuchetMS-Italic, "Lucida Grande", Corbel,  "Trebuchet Ms", sans-serif;
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.75rem;
+}
+
+h5,
+h6,
+dt {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+h6 {
+  font-family: AvenirNext-UltraLight, Avenir-Light, -apple-system, BlinkMacSystemFont, "Segoe UI", "Lucida Grande", "Lucida Unicode", Corbel, "Trebuchet Ms", sans-serif;
+  font-weight: normal;
+}
+
+dt {
+  margin-top: 1rem;
+}
+
+dd {
+  margin: 0 0 .5em 2em;
+} 
+
+p {
+  margin: 0;
+  padding: .5em 0;
+}
+
+h3 + p,
+h4 + p {
+  padding-top: 0;
+}
+
+header h1 {
+  text-align: center;
+}
+
+strong em {
+  font-family: AvenirNext-BoldItalic, Avenir-HeavyOblique, Trebuchet-BoldItalic, "Lucida Grande", Corbel, "Trebuchet Ms", sans-serif;
+  font-weight: bold;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  font-size: .875rem;
+  line-height: 1.5;
+  overflow: auto;
+  padding: 1rem 1.5rem;
+  border-radius: 3px;
+  word-wrap: normal;
+  white-space: pre-wrap;
+}
+
+code, kbd, pre, samp {
+  font-family: Consolas, Menlo, Monaco, monospace;
+}
+
+code, kbd, samp {
+  font-size: 1em;
+}
+
+pre code {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  word-wrap: normal;
+  max-width: initial;
+  display: inline;
+  overflow: initial;
+  line-height: inherit;
+}
+
+pre code:before,
+pre code:after {
+  content: normal;
+}
+
+p code,
+ul code {
+  font-family: Consolas, Menlo, Monaco, monospace;
+  font-size: .875em;
+  margin: 0;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+  padding: 2px 0 0 0;
+}
+
+p code:before,
+p code:after,
+ul code:before,
+ul code:after {
+  content: "\00a0";
+  letter-spacing: -0.2em;
+}
+
+ul {
+  padding: 0 .5em;
+  margin: .5em 0 .5em -.45rem;
+}
+
+ol ul {
+  padding-left: 1.5rem;
+}
+
+ul li {
+  list-style: none;
+  position: relative;
+  margin-left: -.75em;
+  padding-left: .75em;
+}
+
+nav ul li,
+nav ul li a {
+  display: inline-block;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  padding: .5em 1em;
+}
+
+article ul li::before,
+nav ul li:after {
+  content: " \B7"; /* middot in unicode -> &middot; */
+  font-size: 1.25em;
+  color: #3ca555;
+  line-height: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+article ul li::before {
+  padding-right: 3px;
+}
+
+nav ul li:last-of-type:after {
+  content: "";
+  display: none;
+}
+
+ul ol,
+ol ol {
+  margin: .5rem 0 1rem 1.45rem;
+}
+
+ul li li {
+  margin-left: 0;
+}
+
+ul ol li {
+  margin-left: -.75rem;
+}
+
+
+ul li::before,
+blockquote,
+hr,
+pre {
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+blockquote {
+  border-left: .5em solid #ccc;
+  padding: 2em 2rem 2.5rem 3rem;
+  margin-left: 1em;
+  background-color: #f7f7f7;
+  color: #666;
+  font-family: AvenirNext-Italic, Avenir-Oblique, AvenirMedium-Oblique, Georgia, serif;
+  font-style: italic;
+}
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="file"],
+input[type="reset"] {
+  -webkit-appearance: none;
+  overflow: visible;
+  border-radius: 4px;
+  background-clip: padding-box;
+  background-image: -webkit-linear-gradient(top, white, #ddd);
+  background-image: linear-gradient(to bottom, white, #ddd);
+  border: 1px solid;
+  border-color: #ddd #bbb #999;
+  cursor: pointer;
+  color: #333;
+  display: inline-block;
+  outline: 0;
+  overflow: visible;
+  margin: 1.5rem 1rem;
+  padding: 1em 2em;
+  text-shadow: white 0 1px 1px;
+  text-decoration: none;
+  vertical-align: top;
+  width: auto;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+button:invalid {
+  box-shadow: none;
+}
+
+button:focus,
+input[type="button"]:focus,
+input[type="submit"]:focus,
+input[type="file"]:focus,
+input[type="reset"]:focus{
+  box-shadow: #06f 0 0 5px 0;
+  z-index: 1;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="file"]:hover,
+input[type="reset"]:hover {
+  background-image: -webkit-linear-gradient(top, white, #eee 1px, #ccc);
+  background-image: linear-gradient(to bottom, white, #eee 1px, #ccc);
+  text-decoration: none;
+}
+
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="file"]:active,
+input[type="reset"]:active {
+  background-image: -webkit-linear-gradient(top, #ddd, #eee);
+  background-image: linear-gradient(to bottom, #ddd, #eee);
+  box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 2px 0;
+  border-color: #999 #bbb #ddd;
+}
+
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner, button::-webkit-focus-inner, input::-webkit-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+input[type="file"] {
+  color: transparent;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+input[type="file"]::before {
+  content: 'Choose File';
+  color: #111;
+  display: inline-block;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+}
+
+input[type="file"]:hover::before {
+  border-color: black;
+}
+
+input[type="file"]:active {
+  outline: 0;
+}
+
+input[type="file"]:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 1rem 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: Consolas, Menlo, Monaco, monospace;
+  background: #f7f7f7;
+  margin-bottom: 3em;
+}
+
+thead {
+  display: table-header-group;
+}
+
+thead th {
+  border-bottom: 1px solid #999;
+  text-align: center;
+  font-size: 1.125em;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: #ddd;
+}
+
+thead th:nth-of-type(1) {
+  text-align: left;
+}
+
+th, td {
+  padding: .5em 1em;
+}
+
+/* zebra stripes */
+tr:nth-of-type(even) {
+  background: rgba(0, 0, 0, 0.125);
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after,
+.clear {
+  clear: both;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.75rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2.25rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  h5 {
+    font-size: 1.75rem;
+  }
+
+  h6 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  li {
+    font-size: 1.25rem;
+  }
+
+  li li {
+    font-size: 1rem;
+  }
+} 
