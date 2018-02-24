@@ -1,0 +1,11 @@
+
+•	HTTP RESPONSE MESSAGE
+	A request message from a client to a server includes, within the first line of that message, the method to be applied to the resource, the identifier of the resource, and the protocol version in use.
+
+o	Status-Line - The first line of a Response message is the Status-Line, consisting of the protocol version followed by a numeric status code and its associated textual phrase, with each element separated by SP characters.
+
+	Status Code and Reason Phrase
+	is a 3-digit integer result code of the attempt to understand and satisfy the request
+	HTTP status codes are extensible
+
+o	Response Header Fields - The response-header fields allow the server to pass additional information about the response which cannot be placed in the Status- Line. These header fields give information about the server and about further access to the resource identified by the Request-URI.
