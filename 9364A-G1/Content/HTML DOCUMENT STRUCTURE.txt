@@ -5,18 +5,17 @@ o	Composed of three parts:
 3.	a body, which contains the document's actual content. The body may be implemented by the BODY element or the FRAMESET element.
 
 o	The HTML element
--	Start tag: optional, End tag: optional
 -	After document type declaration, the remainder of an HTML document is contained by the HTML element.
 
 	THE DOCUMENT HEAD
 	The HEAD element
-	contains information about the current document, such as its title, keywords that may be useful to search engines, and other data that is not considered document content.
+	contains the document title, keywords useful for search engines, and other data that is not part of the document content.
 
 	The TITLE element
-	The TITLE element is not considered part of the flow of text. It should be displayed, for example as the page header or window title. Exactly one title is required per document.
+	The TITLE element is not part of the flow of text. Exactly one title is required per document.
 
 	The TITLE attribute
-	The title attribute has an additional role when used with the LINK element to designate an external style sheet. Please consult the section on links and style sheets for details.
+	The title attribute has an additional role when used with the LINK element to designate an external style sheet. 
 
 	Meta data
 	The META element specifies a property (here "Author") and assigns a value to it (here "Dave Raggett").
@@ -29,4 +28,6 @@ o	The HTML element
 	The content may be presented by a user agent in a variety of ways.
 	Element identifiers: the id and class attributes
 	The id attribute assigns a unique identifier to an element (which may be verified by an SGML parser).
-	The class attribute, on the other hand, assigns one or more class names to an element; the element may be said to belong to these classes. A class name may be shared by several element instances.
+	The class attribute, on the other hand, assigns one or more class names to an element; 
+  the element may be said to belong to these classes. 
+  A class name may be shared by several element instances.
