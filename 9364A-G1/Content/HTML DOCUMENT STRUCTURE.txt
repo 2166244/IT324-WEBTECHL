@@ -3,6 +3,7 @@ o	Composed of three parts:
 1.	a line containing HTML version information,
 2.	a declarative header section (delimited by the HEAD element),
 3.	a body, which contains the document's actual content. The body may be implemented by the BODY element or the FRAMESET element.
+
 o	The HTML element
 -	Start tag: optional, End tag: optional
 -	After document type declaration, the remainder of an HTML document is contained by the HTML element.
