@@ -28,13 +28,10 @@ Client-server architecture
    A Uniform Resource Identifier (URI) is a compact sequence of
    characters that identifies an abstract or physical resource.
    
-   This specification defines the generic URI syntax and a process
-   for resolving URI references that might be in relative form, along 
-   with guidelines and security considerations for the use of URIs on 
-   the Internet.
+
    
-   A Uniform Resource Identifier (URI) provides a simple and extensible
-   means for identifying a resource.  This specification of URI syntax
+   Uniform Resource Identifier (URI) provides a simple and extensible
+   means for identifying a resource. URI syntax
    and semantics is derived from concepts introduced by the World Wide
    Web global information initiative, whose use of these identifiers
    dates from 1990 and is described in "Universal Resource Identifiers
@@ -44,7 +41,7 @@ Client-server architecture
    Resource Names" [RFC1737].
  
  Overview of the URIs
-	Uniform - It allows different types of resource identifiers t be used in the same
+	Uniform - It allows different types of resource identifiers to be used in the same
 	context, even when the mechanisms used to access those resources may differ.
 	
 	-uniform semantic interpretation of common syntactic conventions across different types
@@ -70,21 +67,19 @@ URL (Uniform Resource Locator)
 by describing its primary access mechanisms (e.g - its network "location")
 
 URN (Uniform Resource Name)
-- historically refer to both URIs under the "urn" scheme (RFC 2141), which is required to remain 
-globally unique and persistent even when the resource ceases to exists or becomes unavailable, and 
+- it refers to both URIs under the "urn" scheme (RFC 2141), which is required to remain 
+globally unique even when the resource ceases to exists or becomes unavailable, and 
 to any other URI with the properties of a name.
 
 HTTP URL 
-The term "web address" is a synonym for a URL that uses the HTTP or HTTPS protocol. The Uniform 
-Resource Locator (URL) was developed by Tim Berners-Lee in 1994 and the Internet Engineering 
-Task Force (IETF) URI working group. ... The URL format is specified in RFC 1738 Uniform Resource 
+The Uniform Resource Locator (URL) was developed by Tim Berners-Lee in 1994 and the Internet Engineering 
+Task Force (IETF) URI working group. The URL format is specified in RFC 1738 Uniform Resource 
 Locators (URL).
 
 STANDARD HTTP REQUEST METHODS
 HTTP defines a set of request methods to indicate the desired action to be performed for a given resource. 
-Although they can also be nouns, these request methods are sometimes referred to as HTTP verbs. Each of 
-them implements a different semantic, but some common features are shared by a group of them: e.g. a request
-method can be safe, idempotent, or cacheable.
+Each of them implements a different semantic, but some common features are shared by a group of them: some of which is
+a request method can be safe, idempotent, or cacheable.
 
 GET
 The GET method requests a representation of the specified resource. Requests using GET should only retrieve data.
