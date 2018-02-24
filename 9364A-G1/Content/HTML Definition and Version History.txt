@@ -1,5 +1,4 @@
 HTML (HyperText Mark-up Language)
-•	To publish information for global distribution, one needs a universally understood language, a kind of publishing mother tongue that all computers may potentially understand.
 •	The publishing language used by the World Wide Web is HTML (from HyperText Markup Language).
 •	The Hypertext Markup Language (HTML) is a simple markup language used to create hypertext documents that are platform independent.
 •	HTML documents are SGML documents with generic semantics that are appropriate for representing information from a wide range of domains.
@@ -25,7 +24,7 @@ o	HTML 4.0 (W3C Recommendation, Dec 1999)
 -	takes great strides towards the internationalization of documents, with the goal of making the Web truly World Wide.
 -	is an SGML application conforming to International Standard ISO 8879 -- Standard Generalized Markup Language [ISO8879]).
 
-o	 HTML 4.0.1 (W3C Recommendation, Apr )
+o	 HTML 4.0.1 (W3C Recommendation, Apr ????)
 -	Subversion of HTML 4.0
 -	is a revision of HTML 4.0 that corrects errors and makes some changes since the previous revision.
 -	Separate structure and presentation
