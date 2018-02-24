@@ -1,6 +1,16 @@
 @charset "utf-8";
 /* CSS Document */
+/* Welcome */
 
+div.welcome {
+    background: url("../images/background.jpg");
+	background-repeat: no-repeat;
+	padding: 180px;
+	opacity: 0.7;
+	background-size; cover;
+	background-attachment: fixed;
+	padding: 100px;	
+}
 
 /* HEADER */
 header{
