@@ -1,609 +1,152 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
-
 <head>
-	<title>Environmental Protection</title>
-	<meta charset="utf-8"/>
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="utf-8">
+<title>WebTech2018</title>
+<link rel="stylesheet" href="../styles/style.css">
 </head>
-<style>
-*, :before, :after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
 
-.container {
-	width: 1200px;
-	margin: 0 auto;
-	padding: 0 15px;
-}
-
-.row {
-	margin: 0 -15px;
-}
-
-.row:before,
-.row:after {
-	display: table;
-	content: " ";
-}
-
-.row:after {
-	clear: both;
-}
-
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
-    float: left;
-    padding: 0 15px;
-}
-.col-12 {
-	width: 100%;
-}
-.col-11 {
-	width: 91.66666667%;
-}
-.col-10 {
-	width: 83.33333333%;
-}
-.col-9 {
-	width: 75%;
-}
-.col-8 {
-	width: 66.66666667%;
-}
-.col-7 {
-	width: 58.33333333%;
-}
-.col-6 {
-	width: 50%;
-}
-.col-5 {
-	width: 41.66666667%;
-}
-.col-4 {
-	width: 33.33333333%;
-}
-.col-3 {
-	width: 25%;
-}
-.col-2 {
-	width: 16.66666667%;
-}
-.col-1 {
-	width: 8.33333333%;
-}
-
-.text-right {
-	text-align: right;
-}
-
-body {
-	font-family: 'Roboto', Arial;
-	font-size: 14px;
-	line-height: 1.7;
-	color: #333;
-	margin: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	line-height: 1.3;
-	margin-top: 0;
-}
-
-h1 {
-	font-size: 36px;
-}
-
-h2 {
-	font-size: 30px;
-}
-
-h3 {
-	font-size: 24px;
-}
-
-h4 {
-	font-size: 18px;
-}
-
-p {
-	margin: 0 0 15px;
-}
-
-a {
-	color: inherit;
-	transition: all .3s ease;
-	-webkit-transition: all .3s ease;
-	text-decoration: none;
-}
-
-a:hover, a:focus {
-	color: #1d9d74;
-	text-decoration: none;
-}
-
-img {
-	max-width: 100%;
-}
-
-header {
-	position: fixed;
-	top: 0;
-	z-index: 10;
-	width: 100%;
-	background: #1d9d74;
-	color: #FFF;
-	padding: 15px 30px 15px 0;
-    box-shadow: 0 0 10px #000;
-}
-
-header h3 {
-	font-family: Georgia;
-	margin: 0;
-}
-
-header h3 a {
-	color: #FFF;
-}
-
-header h3 a:hover {
-	color: #FFF;
-}
-
-header nav {
-	padding: 4px 0;
-}
-
-header nav > ul {
-	list-style: none;
-	margin: 0 -15px 0 0;
-}
-
-header nav > ul > li {
-	display: inline-block;
-	padding-right: 10px;
-	padding-left: 10px;
-}
-
-header nav > ul > li.active a {
-	color: #FFF;
-}
-
-header nav > ul > li > a {
-	color: #b0ddce;
-	text-transform: uppercase;
-	font-size: 14px;
-	letter-spacing: 1px;
-	font-weight: bold;
-}
-
-header nav > ul > li > a:hover {
-	color: #FFF;
-}
-
-section {
-	padding: 3rem 0;
-}
-
-section * {
-	position: relative;
-	z-index: 1;
-}
-
-section p:last-child {
-	margin-bottom: 0;
-}
-
-.img-bg {
-	background-image: url(../images/section-bg.jpg);
-	background-attachment: fixed;
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center;
-	color: #FFF;
-	position: relative;
-}
-
-.img-bg:before {
-	content: '';
-	width: 100%;
-	height: 100%;
-	background-color: #000;
-	opacity: .5;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-.grey-bg {
-	background-color: #EEE;
-}
-
-.img-wrap {
-	position: relative;
-}
-
-.img-wrap:after {
-	content: '';
-	border: 1px solid #FFF;
-	position: absolute;
-	z-index: 2;
-	top: 10px;
-	left: 10px;
-	right: 10px;
-	bottom: 10px;
-}
-
-.text-center {
-	text-align: center;
-}
-
-.text-right {
-	text-align: right;
-}
-
-.btn {
-	display: inline-block;
-	text-transform: uppercase;
-	font-weight: bold;
-	letter-spacing: 1px;
-	padding: 10px 25px;
-	border: 1px solid #1d9d74;
-	color: #1d9d74;
-}
-
-.btn:hover {
-	background-color: #1d9d74;
-	color: #FFF;
-}
-
-.btn.btn-light {
-	border-color: #FFF;
-	color: #FFF;
-}
-
-.btn.btn-light:hover {
-	background-color: #FFF;
-	color: #1d9d74;
-}
-
-#banner {
-	position: relative;
-	background-color: #000;
-	padding: 0;
-}
-
-#banner .banner-img {
-	width: 100%;
-	opacity: .5;
-}
-
-#banner .banner-content {
-	text-align: center;
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 3rem;
-}
-
-#banner .banner-content .logo {
-	display: inline-block;
-	margin-bottom: 15px;
-}
-
-#banner .banner-content h1 {
-	color: #FFF;
-	margin: 0;
-}
-
-#about-scout-barrio {
-	text-align: center;
-}
-
-#about-scout-barrio h2 {
-
-}
-
-#about-scout-barrio p {
-	font-weight: 300;
-	font-size: 18px;
-}
-
-#mission-vission-values {
-	text-align: center;
-	background-color: #1d9d74;
-	color: #FFF;
-}
-
-#mission-vission-values h4 {
-	font-weight: normal;
-}
-
-#mission-vission-values .box-wrap {
-	display: block;
-	position: relative;
-	padding: 30px 15px;
-	border: 1px solid #FFF;
-}
-
-#mission-vission-values .box-wrap .thumb,
-#mission-vission-values .box-wrap h3 {
-	color: #FFF;
-}
-
-#mission-vission-values .box-wrap .thumb {
-	margin-bottom: 15px;
-}
-
-#mission-vission-values .box-wrap h3 {
-	text-transform: uppercase;
-}
-
-#law h4 {
-	font-size: 14px;
-	font-style: italic;
-	font-weight: normal;
-}
-
-
-footer {
-	padding: 1.5rem 0;
-	background-color: #333;
-	color: #FFF;
-}
-
-footer h3 {
-	font-weight: normal;
-}
-
-footer p {
-	text-align: justify;
-}
-
-footer :last-child {
-	margin-bottom: 0;
-}
-
-footer ul {
-	list-style: none;
-	padding: 0;
-}
-
-footer ul.contact-us li i {
- 	width: 15px;
- 	margin-right: 5px;
-}
-
-footer ul.advocacies {
-	list-style: disc;
-    list-style-position: inside;
-}
-
-footer ul.social-icons {
-	
-}
-
-footer ul.social-icons li {
-	display: inline-block;
-	margin: 0 7px;
-}
-
-footer ul.social-icons li:first-child {
-	margin-left: 0;
-}
-
-footer ul.social-icons li:last-child {
-	margin-right: 0;
-}
-
-footer ul.social-icons li a {
-	font-size: 30px;
-}
-
-#colophon {
-	background-color: #1d9d74;
-	color: #b0ddce;
-	padding: 15px 0;
-}
-
-#colophon p {
-	margin: 0;
-}
-
-#colophon p a {
-	text-transform: uppercase;
-	font-weight: bold;
-	color: #b0ddce;
-}
-
-#colophon p a:hover {
-	color: #FFF;
-}
-
-#colophon p span {
-	text-transform: uppercase;
-	font-weight: bold;
-	color: #FFF;
-}
-</style>
-<body id="environmental-protection">
-	<header>
-		<div class="container">
-			<div class="row">
-				<div class="col-4">
-					<h3><a 	href="index.html"><i class="fa fa-tree"></i> Environmental Protection </a></h3>
-				</div>
-				<div class="col-8 text-right">
-					<nav>
-						<ul>
-							<li><a href="#mission-vission-values">About</a></li>
-							<li><a href="#about-scout-barrio">Scout Barrio</a></li>
-							<li><a href="#mission-vision">Vision/Mission</a></li>
-							<li><a href="#clean-and-green">Articles</a></li>
-							<li><a href="#colophon">About Us</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
+<body>
+<header>
+  <div class="container">
+    <div id="branding">
+      <h1><span class="highlight">WebSystem</span>Technologies</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#boxes2">NOTES</a></li>
+        <li><a href="#boxes">SYLLABUS</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="welcome">
+  <div id="note-container">
+    <div id="note-body">
+      <div id="note-pin"></div>
+      <span id="note-msg"> <img id="note1img" src="../images/1.png" alt=""/> </span> </div>
+    <div id="note-body1">
+      <div id="note-pin1"></div>
+      <div id="note-content1"> <span id="note-msg1">
+        <h4>Fun fact! <br>
+          There are <em>945,357,100</em> websites online</h4>
+        </span> </div>
+    </div>
+    <div id="note-body2">
+      <div id="note-pin2"></div>
+      <span id="note-msg2"> <img src="../images/props.png" alt=""/> </span> </div>
+    <div id="note-body3">
+      <div id="note-pin3"></div>
+      <div id="note-content3"><span id="note-msg3"> </span><h4>The first emoticon is commonly credited to Kevin Mackenzie in 1979, but was a rather simple -) and didn’t really look like a face. 3 years later,
+ :-)</h4> </div>
+      </div>
+      <div id="note-body4">
+      <div id="note-pin4"></div>
+      <span id="note-msg4"> <img src="../images/7.png" alt=""/> </span> </div>
+      
+      <div id="note-body5">
+      <div id="note-pin5"></div>
+      <div id="note-content5"> <span id="note-msg5">
+        <h4>The first ever website to go online is still online. It can be found here: http://info.cern.ch/hyper<br>text/WWW/TheProject.<br>html. <br> This website was built in 1991</h4>
+        </span> </div>
+    </div>
 		</div>
-	</header>
+</div>
+<section id="boxes2">
+  <div class="#container_boxes">
+    <p class="title">Course Notes</p>
+    <div class="view view-first"> <img src="../images/www.jpg" alt=""/>
+      <div class="mask">
+        <h2>WORLD WIDE WEB</h2>
+        <a href="www.html" class="info">Read More</a> </div>
+    </div>
+    <div class="view view-tenth"> <img src="../images/url.jpg" alt=""/>
+      <div class="mask">
+        <h2>UNIVERSAL RESOURCE LOCATOR</h2>
+        <a href="url.html" class="info">Read More</a> </div>
+    </div>
+    <div class="view view-first"> <img src="../images/http.jpg" alt=""/>
+      <div class="mask">
+        <h2>HYPERTEXT TRANSFER PROTOCOL</h2>
+        <a href="http.html" class="info">Read More</a> </div>
+    </div>
+    <div class="view view-tenth"> <img src="../images/html.jpg" alt=""/>
+      <div class="mask">
+        <h2>HYPERTEXT MARKUP PROTOCOL</h2>
+        <a href="html.html" class="info">Read More</a> </div>
+    </div>
+  </div>
+</section>
+<section id="boxes">
+  <div class="container">
+    <h2>Course Syllabus</h2>
+    <p id="subtitle">S.Y. 2017-2018</p>
+    <div class="box"> <img src="../images/ic_p.png" alt="">
+      <h3>Prelims</h3>
+      <p>Overview</p>
+      <ul style="circle	">
+      	<li>Overview of World Wide Web</li>
+      	<li>Web Technologies</li>
+      	<li>Uniform Resource Locators</li>
+      	<li>Hypertext Transfer Protocol</li>
+      	<li>Hypertext Markup Language</li>
+      </ul>
+    </div>
+    <div class="box"> <img src="../images/ic_m.png" alt="">
+      <h3>Midterms</h3>
+      <p>Overview</p>
+      <ul style="circle	">
+      	<li>Cascading Stylesheet(CSS)</li>
+      	<li>CSS Fundamentals</li>
+      	<li>CSS Preprocessors, Frameworks, &<br> Libraries(JQuery,other CSWS Technologies(Java Applets))</li>
+      </ul>
+    </div>
+    <div class="box"> <img src="../images/ic_f.png" alt="">
+      <h3>Finals</h3>
+      <p>Overview</p>
+      <ul style="circle	">
+      	<li>Server side Web Scripting</li>
+      	<li>JAVA(Servelets,Java Server Pages)</li>
+      	<li>PHP(Fundamentals & Frameworks)</li>
+      	<li>JavaScript(with Node.js)</li>
+      	<li>Active Server Pages</li>
+      	<li>Other SSWS Technologies and frameworks(CGI,RoR,Django)</li>
+      	<li>Web Security</li>
+      	<li>Advanced Topics(Time-permitting)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!--<section id="dropdown">
+  <div id="wrapper">
+    <div class="content"> 
 
-	<section id="banner">
-		<img src="images/banner.jpg" class="banner-img" alt = "banner">
-		<div class="banner-content">
-			<img src="images/baguio-seal.png" alt="" class="logo">
-			<h1>Together we can save the world by protecting our environment</h1>
+      <h1>HEADING</h1>
+      <input type="checkbox">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum quam vel velit blandit, at pellentesque erat tincidunt. Ut et risus eu lorem dignissim mattis sit amet sit amet dolor. Praesent arcu quam, interdum eu erat et, aliquam egestas felis. Ut pretium erat mauris, quis finibus leo vulputate bibendum. Curabitur ultricies auctor odio lacinia volutpat. Sed venenatis et massa nec pulvinar. Vestibulum a iaculis augue. Morbi vitae congue ante, sit amet efficitur augue. Sed blandit purus ut tortor semper, nec ultrices metus finibus. Vestibulum sed blandit eros. Vestibulum varius massa a est ornare, posuere vehicula erat feugiat.</p>
+    </div>
+  </div>
+</section> --> 
+<!--<section id="boxes1">
+	<div class="container">
+		<div id="box1">
+			<a class="button" href="#popup1">Topic overview</a>
 		</div>
-	</section>
-
-	<section id="mission-vission-values">
-		<div class="container">
-			<h2>Scout Barrio, Baguio City</h2>
-			<h4>A barangay that improves the relatioship between its people while preserving it's natural beauty.</h4>
-
-			<div class="row">
-				<div class="col-4">
-					<div class="box-wrap">
-						<div class="thumb">
-							<i class="fa fa-bullseye fa-5x"></i>
-						</div>
-						<h3>Mission</h3>
-						<p>To bring harmony among constituents through participation in moral, social, environmental and recreational programs towards a better community.</p>
-					</div>
-				</div>
-				<div class="col-4">
-					<div class="box-wrap">
-						<div class="thumb">
-							<i class="fa fa-eye fa-5x"></i>
-						</div>
-						<h3>Vision</h3>
-						<p>To maintain a resilient, safe, and healthy community and attain a good quality of life and prosperity for all Scout Barrio residents.</p>
-					</div>
-				</div>
-				<div class="col-4">
-					<div class="box-wrap">
-						<div class="thumb">
-							<i class="fa fa-heart fa-5x"></i>
-						</div>
-						<h3>Core Values</h3>
-						<p>We are committed to serve our community in sustaining development with dignity, transparency and utmost dedication.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="about-scout-barrio">
-		<div class="container">
-			<h2> Scout Barrio Barangay </h2>
-			<embed width="750" height="400" src="https://youtube.com/embed/Nd4tSD_PRHk">
-		</div>
-	</section>
-
-	<section id="mission-vision" class="img-bg">
-		<div class="container">
-			<div class="row">
-				<div class="col-7">
-					<h2>Vision/Mission of Environmental Protection in Scout Barrio</h2>
-					<p>"To have a clean,healthy and colorful surrounding that the community will enjoy."</p>
-					<p>"To protect the nature for the goodness of the community and our barangay. Protect our surroundings from pollution and destruction."</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="clean-and-green" class="grey-bg">
-		<div class="container">
-			<div class="row">
-				<div class="col-5">
-					<div class="img-wrap">
-						<img src="images/sample-img.jpg" alt="cleaning together">
-					</div>
-				</div>
-				<div class="col-7">
-					<h2>Clean and green makes perfect scene</h2>
-					<p>"Cleanliness is not a work that we do forcefully that is why barangay Scout Barrio is very conservative about cleanliness. They are very strict on following the schedule of disposing of garbages. The garbage must be properly segregated and must be prepared to be picked up by the truck. The schedule of the garbage collection is every wednesday 6:00 am. If the garbage is not prepared before 6:00 am, you will wait another week to be collected. Every Saturday, the whole community is working together to clean their barangay or also called as "bayanihan". They have also a program called "Anti-mosquito misting program".They are visiting all houses to mist their surroundings to prevent mosquito breeding. They are also reminding the community to clean their surroundings that may cause mosquito breeding. They are also imposing "Tapat mo, Linis mo". They are also giving penalties to those who are breaking the rules. As we walk in the barangay, we can barely see litters in the surroundings in this barangay.We also see trash bins in some parts in the barangay. The people here in this barangay are all responsible in means of cleanliness."</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="root-of-equality" class="text-right">
-		<div class="container">
-			<div class="row">
-				<div class="col-7">
-					<h2>Saving the nature can save your life too!</h2>
-					<p>"What will be our situation if the nature is slowly destroyed?. Maybe the humanity will be endangered. That is why Barangay Scout Barrio is very protective in means of nature especially about trees. They got their eyes on the trees in the barangay especially their place is full of trees. They are very strict about illegal logging. You must have a city permit if you want to cut trees in their place. They have also a tree planting program done by the community in parts of their place to make their place cleaner and colorful. Everytime we passed this barangay, we are very comfortable about coolness of the place and the fresh air."</p>
-				</div>
-				<div class="col-5">
-					<div class="img-wrap">
-						<img src="images/sample-img-2.jpg" alt = "forest">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-4">
-					<h3>Contact Us</h3>
-					<ul class="contact-us">
-						<li>
-							<i class="fa fa-phone"></i> <a href="tel:09066844240">+63 906 684 4240</a>
-						</li>
-						<li>
-							<i class="fa fa-envelope"></i> <a href="mailto:mail@gmail.com">mail@gmail.com</a>
-						</li>
-						<li>
-							<i class="fa fa-map-marker"></i> Barangay Hall, Scout Barrio, Baguio City
-						</li>
-					</ul>
-				</div>
-				<div class="col-4">
-					<h3>More Advocacies</h3>
-					<ul class="advocacies">
-						<li>
-							<a href="../9364B-G1-2/index.html">Gender Equality</a>
-						</li>
-						<li>
-							<a href="../9364B-G1-3/index.html">Animal Welfare</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-4">
-					<h3>Follow Us</h3>
-					<ul class="social-icons">
-						<li>
-							<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
-						</li>
-						<li>
-							<a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
-						</li>
-						<li>
-							<a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-	<div id="colophon">
-		<div class="container">
-			<div class="row">
-				<div class="col-6">
-					<p>&copy;Copyright 2018. <a href="index.html">Environmental Protection</a>. All Rights Reserved.</p>
-				</div>
-				<div class="col-6 text-right">
-					<p>Developed By <span>Group 1</span></p>
+		<div id="popup1" class="overlay">
+			<div class="popup">
+				<h2>Mark kenneth marzan</h2>
+				<a class="close" href="#">&times;</a>
+				<div class="content">
+					Dummy text: Its function as a filler or as a tool for comparing the visual impression of different typefaces Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with 'real' content. This is required when, for example, the final text is not yet available.
 				</div>
 			</div>
 		</div>
 	</div>
+</section>-->
+
+<footer>
+  <p>Web Designed by GROUP 1, Copyright &copy; 2018</p>
+</footer>
 </body>
 </html>
