@@ -1,0 +1,457 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WebTech2018</title>
+<link rel="stylesheet" href="../styles/notes.css">
+</head>
+
+<body>
+<header>
+  <div class="container">
+    <div id="branding">
+      <h1><span class="highlight">WebSystem</span>Technologies</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="index.html #boxes2">NOTES</a></li>
+        <li><a href="index.html #boxes">SYLLABUS</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<section id="cd-timeline" class="cd-container">
+<div class="cd-timeline-block">
+  <div class="cd-timeline-img cd-picture"> <img src="../images/notebook.png" alt="Picture"> </div>
+  <!-- cd-timeline-img -->
+  <div class="cd-timeline-content">
+    <h2>WHAT IS CSS?</h2>
+    <div class="content_read">
+      <p> Cascading Style Sheets (CSS) is a basic instrument for including style (e.g., textual styles, hues, separating) to Web records. </p>
+      <p> <em><strong>HIGHLIGHTS</strong></em>: The “CSS Snapshot” (latest: 2017) lists the parts that are ready for implementers. </p>
+      <div class="drop">
+        <input type="checkbox" id="question20" name="q" class="questions">
+        <div class="plus">+</div>
+        <label for="question20" class="question"> NEWS: The Future of Style Connection</label>
+        <div class="answers">
+          <p><em>14 Jun 2018:</em> The CSS Days 2018 in Amsterdam are this year on 14 and 15 June (with workshops on the thirteenth). The beginning day's subject is client connection. Speakers incorporate Eric Meyer and Greg Whitworth.</p>
+          <p><em>15 Mar 2018: </em> New Proposed Recommendation: CSS Color Level 3. 
+            Updated Candidate Recommendation: CSS Fonts Level 3 </p>
+          <p><em>13 Mar 2018:</em> New Working Draft: CSS Text Decoration Level 4. </p>
+          <p><em>4 Mar 2018:</em> Updated Working Draft: CSS Intrinsic & Extrinsic Sizing Level 3. </p>
+          <p><em>6 Feb 2018:</em> New Working Draft: CSS Grid Layout Level 2. </p>
+        </div>
+      </div>
+    </div>
+    <span class="cd-date">Note 1</span> </div>
+  <!-- cd-timeline-content --> 
+</div>
+<!-- cd-timeline-block -->
+<div class="cd-timeline-block">
+  <div class="cd-timeline-img cd-movie"> <img src="../images/notebook.png" alt="Movie"> </div>
+  <!-- cd-timeline-img -->
+  <div class="cd-timeline-content">
+    <h2>CSS Structure</h2>
+    <div class="content_read">
+      <p><strong>At – Rule</strong></p>
+      <p> - Statement which furnishes CSS with guidelines to perform or how to carry on. </p>
+      <p>- Usually begins with ‘@’ sign followed by an identifier then semi-colon, ‘;’ </p>
+      <div>
+        <input type="checkbox" id="question23" name="q" class="questions1">
+        <div class="plus">+</div>
+        <label for="question23" class="question"> @charset </label>
+        <div class="answers">
+          <p>Used by the style sheet to define a set of character.</p>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" id="question24" name="q" class="questions">
+        <div class="plus">+</div>
+        <label for="questio24" class="question"> @import</label>
+        <div class="answers">
+          <p>Ask CSS engine to provide external sheet.</p>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" id="question25" name="q" class="questions">
+        <div class="plus">+</div>
+        <label for="question25" class="question">@namespace </label>
+        <div class="answers">
+          <p>Tells that the XML namespace are prefixed with the content of the CSS engine. </p>
+        </div>
+      </div>
+      <p><strong>Nested at-rules </strong></p>
+      <p>- settled articulations, utilized as an announcement of a template and in addition within contingent gathering rules: </p>
+      <div>
+        <input type="checkbox" id="question26" name="q" class="questions">
+        <div class="plus">+</div>
+        <label for="question26" class="question"> @media </label>
+        <div class="answers">
+          <p>rule that decide should be applied its substance if the gadget grant the specific requirements characterized utilizing a media question.</p>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" id="question27" name="q" class="questions">
+        <div class="plus">+</div>
+        <label for="question27" class="question">@supports </label>
+        <div class="answers">
+          <p>Apply the rule if the program achieved the required specification/condition.</p>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" id="question28" name="q" class="questions">
+        <div class="plus">+</div>
+        <label for="question28" class="question"> @document </label>
+        <div class="answers">
+          <p>A rule that applies its substance if the archive that the template is connected achieved the required specification/condition. </p>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" id="question29" name="q" class="questions">
+        <div class="plus">+</div>
+        <label for="question29" class="question">@font-face </label>
+        <div class="answers">
+          <p>Describes the part of an outer textual style to be downloaded. </p>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" id="question30" name="q" class="questions">
+        <div class="plus">+</div>
+        <label for="question30" class="question">@keyframes </label>
+        <div class="answers">
+          <p>Describes sequence of CSS animation. </p>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" id="question31" name="q" class="questions">
+        <div class="plus">+</div>
+        <label for="question31" class="question">@font-feature-values </label>
+        <div class="answers">
+          <p>regular names in text style variation exchanges for include enacted distinctively in OpenType. </p>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" id="question32" name="q" class="questions">
+        <div class="plus">+</div>
+        <label for="question32" class="question">@page </label>
+        <div class="answers">
+          <p>defines the part of the changes in design that is connected if printing the archive occurs.
+            @font-face - Describes the part of an outer textual style to be downloaded. </p>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" id="question33" name="q" class="questions">
+        <div class="plus">+</div>
+        <label for="question33" class="question">@page </label>
+        <div class="answers">
+          <p>defines the part of the changes in design that is connected if printing the archive occurs.
+            @font-face - Describes the part of an outer textual style to be downloaded. </p>
+        </div>
+      </div>
+    </div>
+    <span class="cd-date">Note 2</span> </div>
+  <!--<section id="dropdown">
+               <div id="wrapper">
+                 <div class="content"> 
+
+                   <h1>HEADING</h1>
+                   <input type="checkbox">
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum quam vel velit blandit, at pellentesque erat tincidunt. Ut et risus eu lorem dignissim mattis sit amet sit amet dolor. Praesent arcu quam, interdum eu erat et, aliquam egestas felis. Ut pretium erat mauris, quis finibus leo vulputate bibendum. Curabitur ultricies auctor odio lacinia volutpat. Sed venenatis et massa nec pulvinar. Vestibulum a iaculis augue. Morbi vitae congue ante, sit amet efficitur augue. Sed blandit purus ut tortor semper, nec ultrices metus finibus. Vestibulum sed blandit eros. Vestibulum varius massa a est ornare, posuere vehicula erat feugiat.</p>
+                 </div>
+               </div>
+               </section> --> 
+  <!-- cd-timeline-content --> 
+</div>
+<!-- cd-timeline-block -->
+<div class="cd-timeline-block">
+  <div class="cd-timeline-img cd-picture"> <img src="../images/notebook.png" alt="Picture"> </div>
+  <!-- cd-timeline-img -->
+  <div class="cd-timeline-content">
+    <h1>Selector</h1>
+    <p> – speaks to a structure, an example is the CSS rule, which figures out which components a selector coordinates in the document tree/as a level portrayal. </p>
+    <p>- Elements in the tree are coordinated by the selector called the subjects.</p>
+    <h1>Selector Syntax </h1>
+    <p> – chain of at least one groupings of straightforward selectors isolated by combinators, with one pseudo-component in the final arrangement. </p>
+    <p>- Elements in the tree are coordinated by the selector called the subjects.</p>
+    <div>
+      <input type="checkbox" id="question40" name="q" class="questions">
+      <div class="plus">+</div>
+      <label for="question39" class="question"> Sequence of Simple Selectors </label>
+      <div class="answers">
+        <p>-	Not separated by combinators<br>
+          -	Starts with type selector/universal selector<br>
+          -	Cannot contain other type selectors or universal selectors (* - implicit). </p>
+        <p>The subjects are components that match every one of the selectors in the grouping.</p>
+      </div>
+    </div>
+    <span class="cd-date">Note 3</span> </div>
+  <!-- cd-timeline-content --> 
+</div>
+<!-- cd-timeline-block --> 
+<!-- cd-timeline-block -->
+<div class="cd-timeline-block">
+  <div class="cd-timeline-img cd-movie"> <img src="../images/notebook.png" alt="Movie"> </div>
+  <!-- cd-timeline-img -->
+  <div class="cd-timeline-content">
+    <h2>SIMPLE SELECTORS</h2>
+    <div class="content_read">
+      <p> Universal selectors - It refers to any single component in the document tree in several namespace including those having without a namespace without automatic/default namespace indicated for selectors. </p>
+      <p> Type selectors - is the name of a record dialect component compose composed utilizing the punctuation of CSS qualified names [CSS3NAMESPACE]. </p>
+      <p>ID Selectors
+        -	global attribute (#) <br>
+        -	enables creators to dole out an identifier to one component case in the archive tree. <br>
+        -	speaks to an element occasion, the identifier is equivalent to the ID selector. </p>
+      <p> Class selectors – can be associated with specific elements.<br>
+        <em>Note: In the event elements that has different class properties, the values should linked including spaces in between values previously looking the class. </em> </p>
+      <p> Attribute selectors: enclosed in brackets
+        (*) any,	(^) beginning, (~)list/exactly, ($)end, (|)starts exactly
+        : Selectors permit the portrayal of a component's attributes. At the point when a selector is utilized as an articulation to coordinate against a component, attribute selectors must be considered to coordinate an attribute if that attribute has a property that matches the trait spoke to by the attribute selector. </p>
+      <h2>Pseudo classes</h2>
+      <div>
+        <input type="checkbox" id="question35" name="q" class="questions">
+        <div class="plus">+</div>
+        <label for="question35" class="question"> Dynamic pseudo classes </label>
+        <div class="answers">
+          <p>Link pseudo-classes<br>
+            :link&nbsp;	:visited
+            .</p>
+          <p>user action pseudo-classes<br>
+            :hover&nbsp;	:active&nbsp;	:focus </p>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" id="question36" name="q" class="questions">
+        <div class="plus">+</div>
+        <label for="questio36" class="question"> Target pseudo-classes</label>
+        <div class="answers">
+          <p>:target (css3)</p>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" id="question37" name="q" class="questions">
+        <div class="plus">+</div>
+        <label for="question37" class="question">Language pseudo-classes</label>
+        <div class="answers">
+          <p>:enabled, &nbsp; :disabled, &nbsp;:checked
+            , :indeterminate </p>
+        </div>
+      </div>
+    </div>
+    <span class="cd-date">Note 4</span> </div>
+  <!--<section id="dropdown">
+               <div id="wrapper">
+                 <div class="content"> 
+
+                   <h1>HEADING</h1>
+                   <input type="checkbox">
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum quam vel velit blandit, at pellentesque erat tincidunt. Ut et risus eu lorem dignissim mattis sit amet sit amet dolor. Praesent arcu quam, interdum eu erat et, aliquam egestas felis. Ut pretium erat mauris, quis finibus leo vulputate bibendum. Curabitur ultricies auctor odio lacinia volutpat. Sed venenatis et massa nec pulvinar. Vestibulum a iaculis augue. Morbi vitae congue ante, sit amet efficitur augue. Sed blandit purus ut tortor semper, nec ultrices metus finibus. Vestibulum sed blandit eros. Vestibulum varius massa a est ornare, posuere vehicula erat feugiat.</p>
+                 </div>
+               </div>
+               </section> --> 
+  <!-- cd-timeline-content --> 
+  
+</div>
+<div class="cd-timeline-content">
+  <h1>Combinators</h1>
+  <div>
+    <input type="checkbox" id="question40" name="q" class="questions">
+    <div class="plus">+</div>
+    <label for="question40" class="question"> Descendant combinators (whitespaces, spaces, i.e.) </label>
+    <div class="answers">
+      <p>The whitespace, which divides two selectors in the form “A B”. This represents that element B is a descendant of element A.</p>
+      <p>Examples: <br>
+        <em>h1 em </em>- (em element is a decendant of h1 element) <br>
+        <em> div * p</em> - (element p is a grandchild of div elemet) </p>
+    </div>
+  </div>
+  <div>
+    <input type="checkbox" id="question39" name="q" class="questions">
+    <div class="plus">+</div>
+    <h2>Sibling combinators</h2>
+    <p>share the same parent</p>
+    <label for="question39" class="question">Types:</label>
+    <div class="answers">
+      <p>Adjacent-sibling combinatory (+), also called next-sibling combinator. <br>
+        Examples: <br>
+        <em>math + p </em>- (p element following a math element) <br>
+        <em>h1.opener + h2 </em>- (adds an attribute selector) </p>
+      <p>General-sibling combinatory (~), also called subsequent-sibling combinatory. <br>
+        Examples: <br>
+        <em>h1 ~ pre </em>– (pre element following an h1) </p>
+      <p>Examples: <br>
+        <em>h1 em </em>- (em element is a decendant of h1 element) <br>
+        <em> div * p</em> - (element p is a grandchild of div elemet) </p>
+    </div>
+  </div>
+  <span class="cd-date">Note 5</span> </div>
+
+<!-- cd-timeline-block -->
+<div class="cd-timeline-block">
+  <div class="cd-timeline-img cd-picture"> <img src="../images/notebook.png" alt="Picture"> </div>
+  <!-- cd-timeline-img -->
+  <div class="cd-timeline-content">
+    <h1>COUNTERS</h1>
+    <p> used to naturally list number of things/items in CSS. They are made and controlled with the counter-increase, counter-set and counter-reset properties, and utilized with the counter() and counters() capacities. Counters have a name, a number esteem, a maker component, and potentially another counter settled inside themselves.</p>
+    <h1>SELECTOR GROUP </h1>
+    <p>– the union of all selectors separated by comma with more than one target.</p>
+    <h1>CSS RULE PRECEDENCE</h1>
+    <p>selectors of several style rules can be a subject to an HTML element</p>
+    <li>Such that rule targets have different properties, their effects cascade (i.e., are combined)</li>
+    <li>Such that styles involve the same property, they conflict, and must be resolved such that only the style is applied</li>
+    <h1>OVERRIDES</h1>
+    <p>Resolution: <br>
+      -	By origin and importance <br>
+      -	Specificity <br>
+      -	Order </p>
+    <p>The specificity of a selector can be computed by: <br>
+      -	Number count of id selectors (= a) <br>
+      -	Number count of class selectors/attribute/pseudo classes (= b) <br>
+      -	number count of type selectors/pseudo elements (= c) </p>
+    <span class="cd-date">Note 6</span> </div>
+  <!-- cd-timeline-content --> 
+</div>
+<div class="cd-timeline-content">
+  <h1>Combinators</h1>
+  <div>
+    <input type="checkbox" id="question38" name="q" class="questions">
+    <div class="plus">+</div>
+    <label for="question38" class="question"> Descendant combinators (whitespaces, spaces, i.e.) </label>
+    <div class="answers">
+      <p>The whitespace, which divides two selectors in the form “A B”. This represents that element B is a descendant of element A.</p>
+      <p>Examples: <br>
+        <em>h1 em </em>- (em element is a decendant of h1 element) <br>
+        <em> div * p</em> - (element p is a grandchild of div elemet) </p>
+    </div>
+  </div>
+  <div>
+    <input type="checkbox" id="question39" name="q" class="questions">
+    <div class="plus">+</div>
+    <h2>CSS DECLARATIONS</h2>
+    <p>The main function of the CSS is to configure the properties among specific values. The property and its equivalent value is the declaration.</p>
+    <p><strong><em>NOTE:</em> </strong>There’s several properties of CSS. However, not all properties and values can be paired to each other. A specific property refers to a valid values. In this case, invalid value paired with the property will be neglected by the engine. </p>
+  </div>
+  <span class="cd-date">Note 7</span> </div>
+<div class="cd-timeline-block">
+<div class="cd-timeline-img cd-picture"> <img src="../images/notebook.png" alt="Picture"> </div>
+<!-- cd-timeline-img -->
+<div class="cd-timeline-content">
+  <h1>Properties </h1>
+  <p> – an identifier</p>
+  <div>
+    <input type="checkbox" id="question50" name="q" class="questions">
+    <div class="plus">+</div>
+    <label for="question50" class="question">Allows authors </label>
+    <div class="answers">
+      <p>–The author has the permission to specify the value of several properties which is a single property. <br>
+        E.g. background, font, margin, padding, border, border-left, border width, etc. </p>
+    </div>
+  </div>
+  <div>
+    <input type="checkbox" id="question51" name="q" class="questions">
+    <div class="plus">+</div>
+    <label for="question51" class="question">Vendor specific extensions (Also known as vendor prefixes)</label>
+    <div class="answers">
+      <p>-	Used only when rendering a specific browser such as Mozilla FireFox. <br>
+        -	Used for experimental non-standard CSS properties <br>
+        -	As the time goes by, vendors are in favor of user-controlled flags or preferences instead of vendor prefixes. <br>
+        E.g. –webkit-box-shadow, -moz-border-radius, -o-transition-property, -ms-, etc. </p>
+    </div>
+  </div>
+  <div>
+    <input type="checkbox" id="question52" name="q" class="questions">
+    <div class="plus">+</div>
+    <label for="question52" class="question">Custom properties, also known as CSS variables (experimental)</label>
+    <div class="answers">
+      <p>-	prefixed with --, representing a value that can be reused throughout the document using a custom property which also can be accssed by the var() functions. </p>
+    </div>
+  </div>
+  <h1>Values</h1>
+  <p><strong>Value types</strong> <br>
+-	CSS-wide keywords: initial, inherit, unset <br>
+-	Property-specific keywords
+</p>
+ <p><strong>numbers</strong><br>-	Integers or reals in (scientific) decimal notation</p>
+   <p><strong>Dimensions</strong><br>
+-	Length, angle, duration (time, frequency, resolution) <br>
+-	Length-units <br>
+•Font-relative
+•Viewport-percentage
+•Absolute
+</p>
+ <p><strong>Angle-units</strong> <br>
+-	For animation or transitions <br>
+-	Pixels(px), mm, cm, in, pt, pc <br>
+</p>
+ <p><strong>Duration or time units</strong></p>
+ <p><strong>Frequency units</strong><br>
+- hz, khz
+</p>
+ <p><strong>Percentages</strong><br>
+-	for specifying length or size related to the length/width of the parent’s container. <br>
+-	Number with a % suffix
+</p>
+ <p><strong>	URL’s and URI’s </strong><br>
+-	url() – absolute or relative <br>
+-	denotes a pointer to a resource, such as an image/ a font.
+</p>
+ <p>	<strong>Colors</strong><br>
+-	the use of colors within the CSS is flexible by specifying the background color, the text color, and etc. 
+</p>
+ <p><strong>Functions</strong><br>
+-	Used to specify the background images.
+</p>
+  <span class="cd-date">Note 8</span> </div>
+  </div>
+<div class="cd-timeline-block">
+  <div class="cd-timeline-img cd-picture"> <img src="../images/notebook.png" alt="Picture"> </div>
+  <!-- cd-timeline-img -->
+  <div class="cd-timeline-content">
+    <h1>CSS COMPONENTS</h1>
+    <p> <strong>•	Psychological Properties Of Colors </strong><br>
+	Functions – for modifying/adjusting colors <br>
+	Miscellaneous types
+</p>
+   <h1>CSS PROCESSORS, FRAMEWORKS, AND POLYFILLS</h1>
+	<p><strong>•	CSS Processors</strong> <br>
+-	Using its advance features, it makes the CSS codes extensible, reusable, and maintainable. Also it increases users’ productivity and save time in developing a website. <br>
+-	generates CSS using a custom language syntax that typically includes features that don’t exist in pure CSS 
+(e.g. Sass, Less, Stylus, etc.) <br>
+
+<strong>•	CSS Frameworks </strong><br>
+-	Used to comply with the website in modern trends. <br>
+-	provides predefined CSS functionality that can be reused, extended, or customized. <br>
+e.g. Bootstrap, Foundation, Materialize, Chrome, Firefox, Safari, etc. <br>
+
+<strong>•	Polyfills</strong> <br>
+   - Provided as a plugins/features that is expected to be provided by the browsers automatically. <br>
+e.g. Modernizr, Selectivizr, etc.
+</p>
+
+    <span class="cd-date">Note 9x</span> </div>
+ 
+  <!-- cd-timeline-content --> 
+</section>
+<!-- cd-timeline -->
+<div id='container2'>
+  <div class="blackboard">
+    <div id='title'>
+      <h1>Answer the following questions.</h1>
+    </div>
+    <br/>
+    <div id='quiz'></div>
+    <div class='button' id='next'><a href='#'>Next</a></div>
+    <div class='button' id='prev'><a href='#'>Prev</a></div>
+    <div class='button' id='start'> <a href='#'>Start Over</a></div>
+    <!-- <button class='' id='next'>Next</a></button>
+               <button class='' id='prev'>Prev</a></button>
+               <button class='' id='start'> Start Over</a></button> --> 
+  </div>
+</div>
+<footer>
+  <p>Web Designed by GROUP1, Copyright &copy; 2018</p>
+</footer>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script> 
+<script src="../js/index.js"></script>
+</body>
+</html>
