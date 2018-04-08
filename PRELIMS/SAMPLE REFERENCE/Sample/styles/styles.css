@@ -1,0 +1,419 @@
+*, :before, :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.row {
+	margin: 0 -15px;
+}
+
+.row:before,
+.row:after {
+	display: table;
+	content: " ";
+}
+
+.row:after {
+	clear: both;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    float: left;
+    padding: 0 15px;
+}
+.col-12 {
+	width: 100%;
+}
+.col-11 {
+	width: 91.66666667%;
+}
+.col-10 {
+	width: 83.33333333%;
+}
+.col-9 {
+	width: 75%;
+}
+.col-8 {
+	width: 66.66666667%;
+}
+.col-7 {
+	width: 58.33333333%;
+}
+.col-6 {
+	width: 50%;
+}
+.col-5 {
+	width: 41.66666667%;
+}
+.col-4 {
+	width: 33.33333333%;
+}
+.col-3 {
+	width: 25%;
+}
+.col-2 {
+	width: 16.66666667%;
+}
+.col-1 {
+	width: 8.33333333%;
+}
+
+.text-right {
+	text-align: right;
+}
+
+body {
+	font-family: 'Roboto', Arial;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #333;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.3;
+	margin-top: 0;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+p {
+	margin: 0 0 15px;
+}
+
+a {
+	color: inherit;
+	transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	text-decoration: none;
+}
+
+a:hover, a:focus {
+	color: #1d9d74;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	width: 100%;
+	background: #1d9d74;
+	color: #FFF;
+	padding: 15px 30px 15px 0;
+    box-shadow: 0 0 10px #000;
+}
+
+header h3 {
+	font-family: Georgia;
+	margin: 0;
+}
+
+header h3 a {
+	color: #FFF;
+}
+
+header h3 a:hover {
+	color: #FFF;
+}
+
+header nav {
+	padding: 4px 0;
+}
+
+header nav > ul {
+	list-style: none;
+	margin: 0 -15px 0 0;
+}
+
+header nav > ul > li {
+	display: inline-block;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+header nav > ul > li.active a {
+	color: #FFF;
+}
+
+header nav > ul > li > a {
+	color: #b0ddce;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+header nav > ul > li > a:hover {
+	color: #FFF;
+}
+
+section {
+	padding: 3rem 0;
+}
+
+section * {
+	position: relative;
+	z-index: 1;
+}
+
+section p:last-child {
+	margin-bottom: 0;
+}
+
+.img-bg {
+	background-image: url(../images/section-bg.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	color: #FFF;
+	position: relative;
+}
+
+.img-bg:before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: .5;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.grey-bg {
+	background-color: #EEE;
+}
+
+.img-wrap {
+	position: relative;
+}
+
+.img-wrap:after {
+	content: '';
+	border: 1px solid #FFF;
+	position: absolute;
+	z-index: 2;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.btn {
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding: 10px 25px;
+	border: 1px solid #1d9d74;
+	color: #1d9d74;
+}
+
+.btn:hover {
+	background-color: #1d9d74;
+	color: #FFF;
+}
+
+.btn.btn-light {
+	border-color: #FFF;
+	color: #FFF;
+}
+
+.btn.btn-light:hover {
+	background-color: #FFF;
+	color: #1d9d74;
+}
+
+#banner {
+	position: relative;
+	background-color: #000;
+	padding: 0;
+}
+
+#banner .banner-img {
+	width: 100%;
+	opacity: .5;
+}
+
+#banner .banner-content {
+	text-align: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 3rem;
+}
+
+#banner .banner-content .logo {
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+#banner .banner-content h1 {
+	color: #FFF;
+	margin: 0;
+}
+
+#about-scout-barrio {
+	text-align: center;
+}
+
+#about-scout-barrio h2 {
+
+}
+
+#about-scout-barrio p {
+	font-weight: 300;
+	font-size: 18px;
+}
+
+#mission-vission-values {
+	text-align: center;
+	background-color: #1d9d74;
+	color: #FFF;
+}
+
+#mission-vission-values h4 {
+	font-weight: normal;
+}
+
+#mission-vission-values .box-wrap {
+	display: block;
+	position: relative;
+	padding: 30px 15px;
+	border: 1px solid #FFF;
+}
+
+#mission-vission-values .box-wrap .thumb,
+#mission-vission-values .box-wrap h3 {
+	color: #FFF;
+}
+
+#mission-vission-values .box-wrap .thumb {
+	margin-bottom: 15px;
+}
+
+#mission-vission-values .box-wrap h3 {
+	text-transform: uppercase;
+}
+
+#law h4 {
+	font-size: 14px;
+	font-style: italic;
+	font-weight: normal;
+}
+
+
+footer {
+	padding: 1.5rem 0;
+	background-color: #333;
+	color: #FFF;
+}
+
+footer h3 {
+	font-weight: normal;
+}
+
+footer p {
+	text-align: justify;
+}
+
+footer :last-child {
+	margin-bottom: 0;
+}
+
+footer ul {
+	list-style: none;
+	padding: 0;
+}
+
+footer ul.contact-us li i {
+ 	width: 15px;
+ 	margin-right: 5px;
+}
+
+footer ul.advocacies {
+	list-style: disc;
+    list-style-position: inside;
+}
+
+footer ul.social-icons {
+	
+}
+
+footer ul.social-icons li {
+	display: inline-block;
+	margin: 0 7px;
+}
+
+footer ul.social-icons li:first-child {
+	margin-left: 0;
+}
+
+footer ul.social-icons li:last-child {
+	margin-right: 0;
+}
+
+footer ul.social-icons li a {
+	font-size: 30px;
+}
+
+#colophon {
+	background-color: #1d9d74;
+	color: #b0ddce;
+	padding: 15px 0;
+}
+
+#colophon p {
+	margin: 0;
+}
+
+#colophon p a {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #b0ddce;
+}
+
+#colophon p a:hover {
+	color: #FFF;
+}
+
+#colophon p span {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #FFF;
+}

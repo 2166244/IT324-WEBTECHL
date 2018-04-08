@@ -1,0 +1,33 @@
+•	HTML DOCUMENT STRUCTURE
+o	Composed of three parts:
+1.	a line containing HTML version information,
+2.	a declarative header section (delimited by the HEAD element),
+3.	a body, which contains the document's actual content. The body may be implemented by the BODY element or the FRAMESET element.
+
+o	The HTML element
+-	After document type declaration, the remainder of an HTML document is contained by the HTML element.
+
+	THE DOCUMENT HEAD
+	The HEAD element
+	contains the document title, keywords useful for search engines, and other data that is not part of the document content.
+
+	The TITLE element
+	The TITLE element is not part of the flow of text. Exactly one title is required per document.
+
+	The TITLE attribute
+	The title attribute has an additional role when used with the LINK element to designate an external style sheet. 
+
+	Meta data
+	The META element specifies a property (here "Author") and assigns a value to it (here "Dave Raggett").
+	The META element can be used to identify properties of a document (e.g., author, expiration date, a list of key words, etc.) and assign values to those properties.
+	Each META element specifies a property/value pair.
+
+	THE DOCUMENT BODY
+	The BODY element
+	contains the document's content.
+	The content may be presented by a user agent in a variety of ways.
+	Element identifiers: the id and class attributes
+	The id attribute assigns a unique identifier to an element (which may be verified by an SGML parser).
+	The class attribute, on the other hand, assigns one or more class names to an element; 
+  the element may be said to belong to these classes. 
+  A class name may be shared by several element instances.
