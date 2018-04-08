@@ -8,7 +8,7 @@
 body {
   font-family: "Lato", sans-serif;
   font-size: 18px;
-  background: #FFFFFF;
+  background: #414040;
 }
 
 /* */
@@ -85,6 +85,10 @@ ul {
 	color: #2980b9;
 	font-weight: bold;
 }
+.content_read li{
+	font-family: "Lato", sans-serif;
+  	font-size: 18px;
+}
 .read-more .content_read {
 	position: relative;
 	overflow: hidden;
@@ -92,7 +96,6 @@ ul {
 	transition: max-height 500ms ease;
 }
 .read-more .content_read::before {
-	content: '';
 	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 50%, white 100%);
 	position: absolute;
 	bottom: 0;
@@ -117,13 +120,6 @@ Primary style
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-}
-body {
-	font-family: "Droid Serif", serif;
-	color: #7f8c97;
-	background-color: #e9f0f5;
-	padding: 0px;
-	margin: 0px;
 }
 a {
 	color: #acb7c0;
@@ -443,6 +439,9 @@ Main components
 .cd-timeline-content h2 {
 	color: #303e49;
 }
+.cd-date{
+	color: #B9B0B0;
+}
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
 	font-size: 13px;
 	font-size: 0.8125rem;
@@ -660,10 +659,10 @@ Main components
 /* Accordion */
 
 .question {
-  color: #fff;
+  color: #2F2222;
   position: relative;
-  background: #98c23d;
-  margin: 0;
+  background: #75ce66;
+  margin-top: 1px;
   padding: 10px 10px 10px 50px;
   display: block;
   width:100%;
@@ -818,6 +817,9 @@ ul {
 	width: 90px;
 }
 
+.drop{
+	padding-top: 25px;
+}
 /* Footer */
 footer {
 	padding: 20px;
