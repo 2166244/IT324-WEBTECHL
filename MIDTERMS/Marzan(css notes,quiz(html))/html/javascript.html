@@ -1,0 +1,649 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>WebTech2018</title>
+    <link rel="stylesheet" href="../styles/notes.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">WebSystem</span>Technologies</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html #boxes2">NOTES</a></li>
+                    <li><a href="index.html #boxes">SYLLABUS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="cd-timeline" class="cd-container">
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture"> <img src="../images/notebook.png" alt="Picture"> </div>
+            <!-- cd-timeline-img -->
+            <div class="cd-timeline-content">
+                <h2>JAVASCRIPT</h2>
+                <p>JavaScript is a cross-stage, question situated scripting dialect used to make site pages intelligent (e.x. having complex liveliness, interactive catches, popup menus, and so forth.). There are additionally further developed server side forms of javascript, for example, Node.Js which enable you to add more usefulness to a site than basically downloading documents, (for example, realtime joint effort between numerous PCs). Inside a host situation (for instance, a web program), JavaScript can be associated with the objects of its condition to give automatic control over them.</p>
+                <h4>JAVASCRIPT FUNDAMENTALS</h4>
+                <div class="drop">
+                    <input type="checkbox" id="question3" name="q" class="questions">
+                    <div class="plus">+</div>
+                    <label for="question3" class="question">Code Structure</label>
+                    <div class="answers">
+                        <p>
+                            TO-DO: Analyze well the building blocks of every code.
+                        </p>
+                        <p> <strong> A. Statements</strong>
+-	These are language structure builds and charges that perform activities. An example articulation alert('Web, Technologies!') which demonstrates the message. Another announcement can be isolated with a semicolon 
+ </p>
+                        <p>(a). Normally every announcement is composed on a different line which turns out to be more discernable <br>
+                        (b).
+a.	alert(‘Web’); alert(‘Technologies’); <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	alert(‘Web’); <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(‘Technologies’);</p>
+                            <p> <strong>B. Semicolons
+                                </strong>
+-	May be precluded by and large when a line break happens as an “implicit” semicolon and known as automatic semicolon insertion. <br>
+a.	alert(‘Web’); <br>
+b.	alert(‘Technologies’);
+ </p>
+                        <p><strong>C. Comments</strong>
+-	This can be put into wherever of the content, they don't influence the execution in light of the fact that the motor basically overlooks them. <br> 
+<strong>NOTE: 
+One-line remarks begin with 2 forward slash characters. </strong><br>
+a.	Multiline remarks begin with a forward slash and a mark/* and end with a reference bullet and a forward slash */. <br>
+//Occupies its very own line 
+<br>
+alert('Web'); <br>  
+//Follows the statement <br>
+alert(‘Technologies’); <br>
+a.	/* Sample of a multiline comment. */ <br>
+b.	alert(‘Web’); <br>
+ &nbsp&nbsp&nbsp&nbsp;       alert(‘Technologies’);
+</p>
+                           
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" id="question4" name="q" class="questions">
+                    <div class="plus">+</div>
+                    <label for="question4" class="question"> The Modern Mode ("Use Strict")</label>
+                    <div class="answers">
+                        <p>It had been so until 2009 when ECMAScript 5 (ES5) appeared. It added new features to the tongue and changed a bit of the present ones. To keep the old code working, most modifications are off as per normal procedure. One needs to engage them unequivocally with a remarkable order "utilize strict". 
+                        </p>
+                        <p><strong>"use strict" OR ‘use strict' </strong>
+-	The whole content works the "advanced" way, in the event that it is situated on the highest point of the content
+<br>
+Syntax:
+	“use strict”; <br>
+	// Works on modern way
+</p>
+                        <p><strong>Conditions:</strong>
+1.	Make sure that the “use strict” is at the top. <br>
+-	This must be applied so that the strict mode will be enabled.
+<br>
+No strict mode: <br>
+	alert(“sample code”);
+	// “use strict” IGNORED since it is not located at the top
+	“use strict” <br>
+	// strict mode is not activated <br>
+                          <strong>  NOTE: Comments may only appear above the “use strict” </strong>
+<br>
+2.	No way for canceling the “use strict”
+</p>
+                        <p><strong>Always “use strict”</strong> <br>
+1.	The "use strict" mandate changes the motor to the "modern" mode, changing the conduct of some implicit highlights. We'll see the points of interest as we examine.  <br>
+2.	The strict mode is empowered by "use strict" at the best. Likewise there are a few dialect highlights like "classes" and "modules" that empower strict mode naturally. <br>
+3.	The strict mode is bolstered by every modern program. <br>
+4.	It's constantly prescribed to begin contents with "use strict".
+</p>
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" id="question5" name="q" class="questions">
+                    <div class="plus">+</div>
+                    <label for="question5" class="question">Variables </label>
+                    <div class="answers">
+                        <p>-	JavaScript application needs to work with data. <br>
+●	Online shop - It may incorporate sold products and shopping basket <br>
+●	Visit applications - Includes messages, clients et cetera 
+<br> <br>
+●	A variable is a "named stockpiling" for crude information. Making a variable in JavaScript, you have to utilize "let" watchword.<br> 
+&nbsp;&nbsp;&nbsp;&nbsp;<em>let message; </em>
+<br>
+● We would now be able to put an example information into it by applying the task administrator (=): <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;<em>let message; </em><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<em>message = 'Hi'; // string will be put away </em>
+<br>
+●	The string is directly saved into the memory territory related with the variable. We can get to it utilizing the variable name: <br>
+&nbsp&nbsp&nbsp&nbsp;<em>let message;</em>
+&nbsp&nbsp&nbsp&nbsp;<em>message = ‘Hello’; </em>//string will be stored
+<br>
+<em>alert(message);</em> // displays the variable content <br>
+●	To be compact we can combine the variable announcement and task into a single line: <br>
+&nbsp&nbsp&nbsp&nbsp;	<em>let message = ‘Hello’;</em> //defining the variable and assigned value <br>
+ &nbsp&nbsp&nbsp&nbsp;    <em>alert(message);</em> // Hello <br>
+●	We can likewise proclaim numerous factors in a single line: <br>
+&nbsp&nbsp&nbsp&nbsp;<em>let user = ‘Maria’, age = 20, message = ‘Hi’;</em><br>
+●	That may appear to be shorter, however it's not suggested. For better coherence, please use one line for every factor. The multi-line variation is somewhat more, yet less demanding to read: <br>
+<em>&nbsp&nbsp&nbsp&nbsp;let user = ‘Maria’; <br>
+&nbsp&nbsp&nbsp&nbsp;let age = 20; <br>
+&nbsp&nbsp&nbsp&nbsp;let message = ‘Hi’;</em> <br>
+
+● Others write many variable like this:
+<em>&nbsp&nbsp&nbsp&nbsp;let user = ‘Maria’, <br>
+      &nbsp&nbsp&nbsp&nbsp;age = 20, <br>
+      &nbsp&nbsp&nbsp&nbsp;message = ‘Hi’;</em>
+                        </p>
+                        <p> <strong>a. var instead of let</strong>
+You may find another keyword in older scripts: var instead of let
+<em>var message = ‘Hello’;</em> 
+This catchphrase is 'nearly' the same as let. In an 'old-school' mold, it additionally proclaims a variable.
+<br>
+<strong>b. Functional Languages</strong>
+-	In such language, once the value is put away in the "box", it's there for eternity. In the event that we have to store something different, the language compels us to make another case (announce another variable).
+<br>
+<strong>c. Variable naming</strong> <br>
+	Limitations: <br>
+1.	The name contains just letters, digits, images $ and _; <br>
+2.	First character must not be a digit. <br>
+&nbsp&nbsp;	Valid names: <br>
+&nbsp&nbsp&nbsp&nbsp; <em>let userName; </em><br>
+&nbsp&nbsp&nbsp&nbsp;<em>let test123;</em> <br>
+Dollar sign ($) and underscore (_) can likewise be utilized as a part of names. They are general images with no uncommon significance. 
+<br>
+&nbsp&nbsp&nbsp&nbsp;<em>let & = 1; // variable with the name “$”</em> <br>
+&nbsp&nbsp&nbsp&nbsp;<em>let _ = 2; // variable with the name “_”</em> <br>
+&nbsp&nbsp&nbsp&nbsp;<em>alert($ + _); // 3</em>
+<br>
+&nbsp&nbsp;Incorrect variable names: <br>
+&nbsp&nbsp&nbsp&nbsp;<em>let 1a; // can’t begin with a digit</em> <br>
+&nbsp&nbsp&nbsp&nbsp;<em>let my-name; // a hyphen ‘-’ is not permitted in the name</em>
+<strong>d. Case-sensitivity
+</strong>
+Variables name Hello and HeLLo are two different variables.
+<br>
+<strong>e. Non-english letters are permitted, yet not prescribed </strong><br>
+&nbsp&nbsp&nbsp&nbsp;<em>let имя = '...';</em><br>
+&nbsp&nbsp&nbsp&nbsp;<em>let 我 = '...';</em>
+<br>
+<strong>f. Reserved names</strong> <br>
+	They are utilized by the dialect itself including let, class, return, function <br>
+<em>let let = 5; // cannot name a variable “let”, error!let let = 5; // cannot name a variable “let”, error!</em>
+<br>
+<em>let return = 5; // cannot name it “return”, error!</em>
+</p>
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" id="question6" name="q" class="questions">
+                    <div class="plus">+</div>
+                    <label for="question6" class="question">Constants</label>
+                    <div class="answers">
+                        <p>
+                           Declaring a constant variable, one can utilize const rather than let:<br>
+&nbsp&nbsp&nbsp&nbsp;<em>const myDateOfBirth = “11.12.1998”</em>
+<br>
+It can't be changed in light of the fact that an endeavor to do it would cause an error. <br>
+&nbsp&nbsp&nbsp&nbsp;<em>const myDateOfBirth = “11.12.1998” <br>
+&nbsp&nbsp&nbsp&nbsp;myDateOfBirth = “01.01.2011” // ERROR! <br></em>Reassigning the constant is not allowed.
+    <br>          
+<strong>a.	Capitalized constants</strong>
+-	There is a wide practice to use constants as accepted names for difficult to-review regards that are known before execution. Such constants are named using capital letters and underscores.
+<br>
+<em>&nbsp&nbsp&nbsp&nbsp;const COLOR_RED = “#F00”; <br>
+&nbsp&nbsp&nbsp&nbsp;const COLOR-GREEN = “#0F0”; <br>
+&nbsp&nbsp&nbsp&nbsp;const COLOR_BLUE = “#00F”;
+<br>
+&nbsp&nbsp&nbsp&nbsp;// when picking a certain color <br>
+&nbsp&nbsp&nbsp&nbsp;let color = COLOR_RED; <br>
+&nbsp&nbsp&nbsp&nbsp;alert(color); // #F00</em>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" id="question7" name="q" class="questions">
+                    <div class="plus">+</div>
+                    <label for="question7" class="question">Data Types </label>
+                    <div class="answers">
+                        <p>
+It can be a string and afterward get a numeric value. <BR>
+<em>&nbsp&nbsp&nbsp&nbsp;//no error <br>
+&nbsp&nbsp&nbsp&nbsp;let message = “web technologies”; <br>
+&nbsp&nbsp&nbsp&nbsp;message = 09876;</em> <br>
+    <br>
+<strong>a.Number</strong> <br>
+Serves for whole number and drifting point numbers<br>
+Operation for numbers: multiplication (*), division (/), addition (+), subtraction (-) <br>
+<em>&nbsp&nbsp&nbsp&nbsp;let n = 321; <br>
+&nbsp&nbsp&nbsp&nbsp;n = 23.23;</em> <br>
+Special numeric values: Infinity, -Infinity, NaN <br>
+●	<strong>Infinity</strong> - it is a mathematical infinity loop, also a special value which is greater than other number.<br>
+		<em>&nbsp&nbsp&nbsp&nbsp;alert( 1/0 ); //Infinity <br>
+		&nbsp&nbsp&nbsp&nbsp;alert(Infinity); //Direct saying</em> <br>
+●	<strong>NaN</strong> - This is an aftereffect of a wrong/indistinct scientific task and speaks to computational mistake. <br>
+<em>&nbsp&nbsp&nbsp&nbsp;alert( “not a number” / 2 );  // Division is erroneous <br>
+		&nbsp&nbsp&nbsp&nbsp;alert( “not a number” / 2  + 5 ); // NaN</em>
+    <br>
+<strong>b.	String</strong> <br>
+<em>&nbsp&nbsp&nbsp&nbsp;let str = “Hi”; <br>
+&nbsp&nbsp&nbsp&nbsp;let str2 = 'Single statements'; <br>
+&nbsp&nbsp&nbsp&nbsp;let phrase = 'can implant ${str}; </em>
+<br>
+There are 3 types of quotes: <br>
+1.	Double quote: “Hello” <br>
+2.	Single quote: ‘Hello’ <br>
+3.	Backticks `Hello`<br>
+
+<strong>c. Boolean (Logical Type) </strong> <br>
+   &nbsp&nbsp&nbsp&nbsp;●Two values (true and false) <br>
+<em>&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp;let nameFieldChecked = false; // no, name field is not checked <br>
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp;let ageFieldChecked = true; // yes, age field is checked</em> <br>
+<strong>d. “Null” value</strong>
+   It doesn’t belong to any type of the above-mentioned. It is just a special value meaning “nothing”, “empty”, or “unknown value”. <br>
+    <em>&nbsp&nbsp&nbsp&nbsp;let age = null;</em>
+    <br>
+     <strong>f. Objects and Symbols</strong> <br>
+Object: It is special and called “primitive” which has a value that contains only a single thing (string/number). Conversely, it is used to store accumulations of information and more perplexing elements. 
+<br>
+<strong>g. Typeof operator</strong> <br>
+Returns the sort of the contention. It is helpful when we need to process estimations of various sorts in an unexpected way, or simply need to make a speedy check.<br>
+Supports two types of sentence structure: <br>
+&nbsp&nbsp&nbsp&nbsp;1.	Operator: typeof x <br>
+&nbsp&nbsp&nbsp&nbsp;2.	Function style: typeof(x) <br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;The call to typeof x restores a string with the sort name:  <br>
+    <em>&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp;typeof undefined // “undefined” <br>
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp;typeof 0 // “number” <br>
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp;typeof true // “boolean” <br>
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp;typeof “foo” // “string” <br>
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp;typeof Symbol(“id”) // “symbol” <br>
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp;typeof Math // “object” (1) <br>
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp;typeof null // “object” (2) <br>
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp;typeof alert // “function” <br></em>
+                            
+<p><strong>Note:</strong> Other concepts behind data types such as Type conversions, Operators, Comparisons, Interaction, Logical Operators, and Loops are basically the same how Java syntax is implemented but in other cases like functionality and structure, it might not be the same.
+                        </p>
+                            </p> 
+                    </div>
+                </div>
+                 <div>
+                    <input type="checkbox" id="question100" name="q" class="questions">
+                    <div class="plus">+</div>
+                    <label for="question100" class="question">Functions </label>
+                    <div class="answers">
+                        <p>
+<strong>SYNTAX:</strong> <br>
+<em>&nbsp&nbsp&nbsp&nbsp;function name(parameters, delimited, by, comma) {<br>
+&nbsp&nbsp&nbsp&nbsp;  /* code */<br>
+&nbsp&nbsp&nbsp&nbsp;}</em> <br>
+    <br>
+<strong>FUNCTION DECLARATION </strong> <br>
+   &nbsp&nbsp&nbsp&nbsp;We can create a function using the function declaration and looks like this:<br>
+<em>&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp;function showMessage() {<br>
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp; alert('Web System and Technologies'); <br>
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp; }</em> <br>
+                           <br>
+&nbsp&nbsp&nbsp&nbsp; First is the function keyword, then the name of the function, then a sort of parameter between the parentheses, lastly the code of the function, likewise named the “function body” between wavy or curly braces.<br>
+                            <br>
+<strong>New Function: showMessage()</strong><br>
+<em>&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp;function showMessage() {<br>
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp; alert('Web System and Technologies'); <br>
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp; } <br>               
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp; showMessage(); <br>
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp; showMessage();</em><br>
+                            <br>
+<strong>LOCAL VARIABLES</strong> <br>
+   &nbsp&nbsp&nbsp&nbsp;It is only visible inside that function if a variable is declared inside.<br>
+<em>&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp;function showMessage() {<br>
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp; let message = "Hello, this is a sample message!"; // local variable
+<br>
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;&nbsp; alert( message );
+<br>               
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;} <br>
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;&nbsp; showMessage(); // Hello, this is a sample message!<br>
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;&nbsp; showMessage(); // Errors since the variable is local</em><br>
+<br><strong>OUTER VARIABLES</strong> <br>
+&nbsp&nbsp&nbsp&nbsp; Accessed when a function is an outer variable. This is only used when there is no local variables.<br>
+<em>&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp;let userName = 'Maria';<br>
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp; function showMessage() { <br>
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;&nbsp; alert( message );
+<br>               
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;} <br>
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;&nbsp; showMessage(); // Hi, Maria</em><br>
+<br>&nbsp&nbsp&nbsp&nbsp; The function can be modified and has a full access to the outer variable.<br>                       
+<em>&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp;let userName = 'Maria';<br>
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; function showMessage() { <br>
+&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; userName = "Peter"; // (1) changed the outer variable<br>               
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp; let message = 'Hi, ' + userName;<br>
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;&nbsp;alert(message);<br>
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp; alert( userName ); // Maria before the function call<br>
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp; showMessage()<br>
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp; alert( userName ); // Peter is the value that was modified by the function</em><br>
+<br>&nbsp&nbsp&nbsp&nbsp;NOTE: Global variables are declared outside and visible from any other functions.<br>
+<br><strong>PARAMETERS</strong><br>
+&nbsp&nbsp&nbsp&nbsp;Function arguments can pass the arbitrary data to function when using a parameter.
+<em>&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp; function showMessage(from, text) { // arguments: from, text <br>&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;&nbsp;   alert(from + ': ' + text);<br>               
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;} <br>
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;&nbsp; showMessage('Bernie', 'Thank You!'); // Bernie: Thank You! (*)
+<br>&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;&nbsp; showMessage('Benny', "You’re welcome."); // Benny: You’re welcome. (**) </em><br>
+<br>&nbsp&nbsp&nbsp&nbsp;Function arguments can pass the arbitrary data to function when using a parameter. <br>
+<br><strong>DEFAULT VALUES</strong><br>
+&nbsp&nbsp&nbsp&nbsp;A value will become undefined if a parameter is not given. For example, the example function showMessage(from, text) is called with a single argument.<br>
+<em>&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp; showMessage(“Benny”);</em><br>
+<br>&nbsp&nbsp&nbsp&nbsp;It has no error since it has no text in it so it’s assumed that text == undefined.<br>                <em>&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp; function showMessage(from, text = "no text provided") { <br> 
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;&nbsp;  alert( from + ": " + text ); <br>
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;&nbsp; } <br>
+&nbsp&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;&nbsp; showMessage("Benny"); // Benny: no text provided </em> <br>
+<br>&nbsp&nbsp&nbsp&nbsp;NOTE: Default parameters old-style are a century editions of JavaScript which does not support default parameters. There are other ways in supporting them like: <br>
+<br>&nbsp&nbsp&nbsp&nbsp; a. Explicit check that is being undefined <br>
+<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; function showMessage(from, text) { <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  if (text === undefined) { <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text = 'no text provided; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alert( from + ": " + text ); <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } </em>
+<br>&nbsp&nbsp&nbsp&nbsp; b. || operator<br>
+<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; function showMessage(from, text) { <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // text gets the "default" value if it is incorrect <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   text = text || 'no text provided; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } </em><br>
+<br><strong>RETURNING A VALUE</strong><br>
+&nbsp&nbsp&nbsp&nbsp;As an outcome, the function will return a value back into the calling code<br>
+<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+function sum(x, y) { <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return x + y; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; let result = sum(13, 2); <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alert( result ); // 15 </em> <br>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+NOTE: Function that has an empty return or returns undefined without it <br>
+<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; function doNothing() { /* empty */ } <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alert( doNothing() === undefined ); // true </em><br>
+<br><strong>NAMING A FUNCTION</strong><br>
+&nbsp&nbsp&nbsp&nbsp;They are accurately describe what the function does that it why functions are actions.<br>  
+<br>Functions that starts with:
+<br>● “get…” - a value is returned
+<br>● “calc…” - something is being calculated
+<br>● “create…” - something is being created
+<br>● “check…” - something is being checked and returned as a boolean, etc.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+NOTE: One function - one action: It should exactly do what is being suggested by the name, nothing more.<br>
+<br>Examples in breaking the rule:
+<br>● getAge - if it displays an alert message with the age which would be bad
+<br>● createForm - if it modifies the document, adding a form should only create it and return
+<br>● checkPermission - if it presents the access granted/denied message and must only shows he check and the result will be returned.<br>
+<br><strong>FUNCTIONS == COMMENTS</strong><br>                 
+&nbsp&nbsp&nbsp&nbsp;It must be short and do exactly the same thing. If it is huge, it might be worth it to break the function into smaller functions.<br>       
+<br>a. Used a label <br>
+<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; function showPrimes(x) { <br>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nextPrime: for (let i = 2; i < x; i++){
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for (let y = 2; y < i; y++) {  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  if (i % y == 0) continue nextPrime; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alert(i); //prime <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} </em><br>
+<br>b. Additional function: isPrime(x) <br>
+<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; function showPrimes(x) { <br>   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  for (let z = 2; z < x; z++) { <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  if (!isPrime(z)) continue; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  alert(z);  //  prime <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} </em><br>
+<br> <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; function isPrime(x) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  for (let z = 2; z < x; z++) { <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  if ( x % z == 0) return false; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return true; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} </em><br>
+<br>&nbsp&nbsp&nbsp&nbsp;This is easier to be understood because instead of the code piece, we can see the name of the action (isPrime) which is sometimes refer to as self-describing. <br> 
+                    </div>
+                </div>
+                <span class="cd-date">Note 1</span>
+            </div>
+            <!-- cd-timeline-content -->
+        </div>
+        <!-- cd-timeline-block -->
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-movie"> <img src="../images/notebook.png" alt="Movie"> </div>
+            <!-- cd-timeline-img -->
+            <div class="cd-timeline-content">
+                <h2>JAVASCRIPT: PRE-PROCESSORS</h2>
+                <div class="content_read">
+                    <p>Examples are Coffee Script, Livescript, Typescript, Babel, and many more.</p>
+                    <div>
+                        <input type="checkbox" id="question8" name="q" class="questions">
+                        <div class="plus">+</div>
+                        <label for="question8" class="question"> Coffee Script</label>
+                        <div class="answers">
+                            <p>Coffee Script - it is an example of little language that compiles into javascript. To show the good components of a javascript in a easy manner, coffee script can be used. To delimit block of code, whitespaces is significant in Coffee Script; the use of indentation to surround if-statements,block of code functions, try/catch, etc is used. Instead of using curly braces. </p>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="question9" name="q" class="questions">
+                        <div class="plus">+</div>
+                        <label for="question9" class="question"> Livescript</label>
+                        <div class="answers">
+                            <p>Livescript -  to write expressive code without repetitive boilerplate livescript can be used and it is also a language which compiles to javascript. </p>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="question10" name="q" class="questions">
+                        <div class="plus">+</div>
+                        <label for="question10" class="question">Typescript</label>
+                        <div class="answers">
+                            <p>Typescript - it uses the same syntax  and semantics as other javascript preprocessors that millions of javascript developers today know this semantics. Typescript is a simple javascript code which runs on any browser. Typescript is a highly productive development tools that uses by the javascript developers.</p>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" id="question16" name="q" class="questions">
+                        <div class="plus">+</div>
+                        <label for="question16" class="question">Babel</label>
+                        <div class="answers">
+                            <p>Babel - it is best known for its ability to turn ES6 that runs in the browser today and it a is transpiler for javascript, ES6 is the next version of javascript.</p>
+                        </div>
+                    </div>
+                    <BR>
+        <h2>JAVASCRIPT: OBJECTS</h2>
+        <P>Containers for data values are javascript variables and a variable is object too.
+<BR>
+ &nbsp &nbsp;This line code will assign a value to variable tools; <BR>
+    &nbsp &nbsp &nbsp &nbsp;<em>var tools = “Hammer”;</em> <br>
+
+ &nbsp &nbsp;Objects in javascript can contain many values: <br>
+ &nbsp &nbsp &nbsp &nbsp;<em>var tools= {type:"Hammer", model:"500", color:"white"};</em>
+<br>
+<strong>Object properties</strong> <br>
+<em>var prsn = {fName:"Mario", lName:"Cruz", age:34};</em>
+<br>
+<strong>Object methods</strong> <br>
+The methods are the actions that is used to execute items. <br>
+&nbsp &nbsp &nbsp &nbsp;<em>fullName	function() {return this.firstName + " " + this.lastName;}</em> <br>
+
+<strong>Accessing object properties</strong> <br>
+&nbsp &nbsp &nbsp &nbsp;<em>objectname.propertyName <br>
+  &nbsp &nbsp &nbsp &nbsp;  prsn.lastName</em> <br>
+
+<strong>Accessing Object Methods</strong> <br>
+&nbsp &nbsp &nbsp &nbsp;<em>objectName.methodName() <br>
+&nbsp &nbsp &nbsp &nbsp;name = prsn.fullName();</em>
+</P>
+                </div>
+                <span class="cd-date">Note 2</span>
+            </div>
+        </div>
+        <!--<section id="dropdown">
+            <div id="wrapper">
+              <div class="content"> 
+
+                <h1>HEADING</h1>
+                <input type="checkbox">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum quam vel velit blandit, at pellentesque erat tincidunt. Ut et risus eu lorem dignissim mattis sit amet sit amet dolor. Praesent arcu quam, interdum eu erat et, aliquam egestas felis. Ut pretium erat mauris, quis finibus leo vulputate bibendum. Curabitur ultricies auctor odio lacinia volutpat. Sed venenatis et massa nec pulvinar. Vestibulum a iaculis augue. Morbi vitae congue ante, sit amet efficitur augue. Sed blandit purus ut tortor semper, nec ultrices metus finibus. Vestibulum sed blandit eros. Vestibulum varius massa a est ornare, posuere vehicula erat feugiat.</p>
+              </div>
+            </div>
+            </section> -->
+        <!-- cd-timeline-content -->
+        </div>
+        <!-- cd-timeline-block -->
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture"> <img src="../images/notebook.png" alt="Picture"> </div>
+            <!-- cd-timeline-img -->
+            <div class="cd-timeline-content">
+                <div class="content_read">
+                    <h3>JAVASCRIPT: FRAMEWORKS</h3>
+                    <p>As of today, the features and functionalities of Javascript can be extended to various frameworks which can exemplify the beauty and astonishing side o Javascript. The well known framework of Javascript are Angularjs, Reactjs and Vue.js.</p>
+                    <div>
+                        <input type="checkbox" id="question11" name="q" class="questions">
+                        <div class="plus">+</div>
+                        <label for="question11" class="question"> AngularJS</label>
+                        <div class="answers">
+                            <p>AngularJS is known to be a Model-View-Anything framework. It can be associated in some businesses and enterprises. It offers features categorized as call to action such as code manufacturing, application cleaning, and binding of statistics
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="question12" name="q" class="questions">
+                        <div class="plus">+</div>
+                        <label for="question12" class="question">ReactJS</label>
+                        <div class="answers">
+                            <p>React is applicable to the concept of web page programs and mobile application on how to develop it. It objectives commonly to offer pace, simplicity, and scalability. As a person interface library, React is regularly used alongside different libraries consisting of Redux.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="question13" name="q" class="questions">
+                        <div class="plus">+</div>
+                        <label for="question13" class="question">Vue.js</label>
+                        <div class="answers">
+                            <p>Vue.js is an open source framework of Javascript for enabling the development of UI. Integration into initiatives that use different JavaScript libraries is made clean with Vue because it's miles designed to be incrementally adoptable. Vue can also feature as a web utility framework capable of powering advanced unmarried-web page applications.</p>
+                        </div>
+                    </div>
+                    <br> <br>
+                    <h2>JAVASCRIPT: OTHER TECHNOLOGIES & API</h2>
+                    <div>
+                        <input type="checkbox" id="question17" name="q" class="questions">
+                        <div class="plus">+</div>
+                        <label for="question17" class="question">Core Java Language and API Script</label>
+                        <div class="answers">
+                             ECMA Script was the core language of Java Script provided by the committee ECMA TC39. <br>
+&nbsp&nbsp&nbsp;ECMA Script Scope <br>
+&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;○	Syntax of keywords, literals, rules in parsing, control flow, etc.) <br>
+&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;○	Handling error mechanisms <br>
+&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;○	Data types <br>
+&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;○	Global object <br>
+&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;■	A prototype-based inheritance mechanism of: <br>
+&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp●	Objects and functions (Prototype, JSON, etc.)
+</p>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="question14" name="q" class="questions">
+                        <div class="plus">+</div>
+                        <label for="question14" class="question">DOM API</label>
+                        <div class="answers">
+                            <p>&nbsp&nbsp&nbsp;WebIDL specification provides detailed description about the specification of the integration of DOM technologies and ECMA Script. <br>
+	<strong>&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;Basis of Document Object Model (DOM)</strong> <br>
+		&nbsp&nbsp&nbsp;DOM is an interface responsible for programming objects, datas, etc., in HTML and XML. It is cross-platform and offers language independency as well.
+ The DOM  tree may be addressed by certain methods. The standard established by W3c and WHATWG are used in many users today to enable the functionalities of DOM in relation with JavaScript. <br>
+&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;●	DOM Core would consists of tree model, Document Structure, the event architecture: Events, Node, Event Target, Document Fragment,
+<br>
+<strong>DOM Interfaces</strong><br>
+&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;●	Window - it composes the document of DOM. <br>
+&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;●	Document - it points to the document which is specified by the DOM. <br>
+&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;●	ChildNode - Node objects containing methods which can have a parent node as well.<br>
+&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;●	Event - user generated or API generated events which is located in the document object model. <br>
+&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;●	Worker - an interface of the API which can send messages to the server and creates task running in the background. <br>
+</p>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="question15" name="q" class="questions">
+                        <div class="plus">+</div>
+                        <label for="question15" class="question"> HTML DOM & BOM API</label>
+                        <div class="answers">
+                            <p>●	HTML DOM <br>
+&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;HTML, Hypertext Markup Language, is also a concept in the DOM. Classname, property, elements are concepts that can be infer from HTML using the model of document object. <br>
+&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;E.g Document, Window, Refer to DOM documentation. <br> <br>
+●	BOM API  (non standardized) <br>
+&nbsp&nbsp&nbsp;&nbsp&nbsp&nbsp;Basing it from the model of DOM, BOM also inherits some interfaces such as Window, Navigator, Screen, Location, History, etc.
+</p>
+                        </div>
+                    </div>
+                </div>
+                <span class="cd-date">Note 3</span>
+            </div>
+            <!-- cd-timeline-content -->
+        </div>
+        <!-- cd-timeline-block -->
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-location"> <img src="../images/notebook.png" alt="Location"> </div>
+            <!-- cd-timeline-img -->
+            <div class="cd-timeline-content">
+                <h2>MISCELLANEOUS JAVASCRIPT WEB APIs</h2>
+                <div class="content_read">
+                    <p>● <strong>Geolocation</strong> - allows the integration of the application and the location of the user which enables the functionality of the application. <br><br>
+●<strong>IndexedDB</strong> - an API responsible for storing amounts of data, files, etc. in client-side. <br><br>
+●<strong>Local Storage</strong> - a mechanism of Web storage in which origin has a distinct storage area that are available for every page session duration, but still works even if the browser has been reopened or closed. <br><br>
+                        
+●	<strong>Push Notifications</strong> - gives both the user and the web application an alert whether an important or not to the web application coming from the server. <br><br>
+●	<strong>Service Workers</strong> - act as proxy server in collaboration  <br><br>
+●	<strong>Web Sockets</strong>- Using this API, an event driven message will prompt even if you didn’t urge the server to reply, and you can receive messages as well.<br><br>
+●	<strong>Web Workers</strong>- possible to configure and execute script in the background while executing the web application in a threading way. <br><br>
+●	<strong>XMLHttpRequest (AJAX)</strong> - A full page refresh is not needed when retrieving data. In the process of main execution of the web application, it will just continue updating without having to disturb the user.  It is mainly used in Ajax Programming. 
+</p>
+                </div>
+                <span class="cd-date">Note 4</span>
+            </div>
+            </div>
+ <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture"> <img src="../images/notebook.png" alt="Picture"> </div>
+            <!-- cd-timeline-img -->
+            <div class="cd-timeline-content">
+                <div class="content_read">
+                    <h3>JAVASCRIPT: XMLHttpRequest (AJAX)</h3>
+                    <p><strong>What is AJAX?</strong> <br>
+•	AJAX means Asynchronous JavaScript and XML, which makes a certain website make calls to the server once. In other words, AJAX makes it possible to update the web page without reloading it. Imagine a website that has multiple thumbnails or contents, with AJAX the contents of the website will be loaded once.
+</p>
+                    <div>
+                        <input type="checkbox" id="question19" name="q" class="questions">
+                        <div class="plus">+</div>
+                        <label for="question19" class="question"> 
+                        Use of AJAX</label>
+                        <div class="answers">
+                            <p>•	AJAX is dependent so it should be used with other website development tools; Some of which is shown below: <br>
+&nbsp&nbsp&nbsp; oJavascript
+
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="question12" name="q" class="questions">
+                        <div class="plus">+</div>
+                        <label for="question12" class="question">ReactJS</label>
+                        <div class="answers">
+                            <p>React is applicable to the concept of web page programs and mobile application on how to develop it. It objectives commonly to offer pace, simplicity, and scalability. As a person interface library, React is regularly used alongside different libraries consisting of Redux.
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                <span class="cd-date">Note 5</span>
+                </div>
+            </div>
+       
+            <!-- cd-timeline-content -->
+        </div>
+        <!-- cd-timeline-block -->
+    </section>
+    <!-- cd-timeline -->
+    <footer>
+        <p>Web Designed by GROUP1, Copyright &copy; 2018</p>
+    </footer>
+</body>
+
+</html>
